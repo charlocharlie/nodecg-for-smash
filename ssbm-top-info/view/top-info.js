@@ -14,7 +14,7 @@ $(function () {
 	}
 
 	function updatePanelsAnim(data) {
-		$('.panel').animate({top: "-100%"}, {duration: 1000, complete: function () { updateText(data); }});
+		$('.panel').animate({top: "-125%"}, {duration: 500, complete: function () { updateText(data); }});
 		$('.panel').animate({top: "0%"}, {duration: 1000});
 	}
 
@@ -24,9 +24,9 @@ $(function () {
 	}
 
 	function showMessage(data) {
-		$('#panel1').animate({left: "-460px"}, {duration: 1000});
-		$('#panel2').animate({left: "1270px"}, {duration: 1000});
-		$('#message').animate({left: "0px", width: "1270px"}, {duration: 1000});
+		$('#panel1').animate({left: "-240px"}, {duration: 1000});
+		$('#panel2').animate({left: "872"}, {duration: 1000});
+		$('#message').animate({left: "8px", width: "856px"}, {duration: 1000});
 		setTimeout(function() {
 			$('#message-text').text(data);
 			$('#message-text').fadeIn(500);
@@ -36,9 +36,9 @@ $(function () {
 
 	function hideMessage(data) {
 		$('#message-text').fadeOut(500);
-		$('#message').animate({left: "645px", width: "0"}, {duration: 1000});
-		$('#panel1').animate({left: "165px"}, {duration: 1000});
-		$('#panel2').animate({left: "645px"}, {duration: 1000});
+		$('#message').animate({left: "436px", width: "0"}, {duration: 1000});
+		$('#panel1').animate({left: "104px"}, {duration: 1000});
+		$('#panel2').animate({left: "528px"}, {duration: 1000});
 	}
 
 	var bgInfo = nodecg.Replicant('bgInfo', 'ssbm-bg-helper');

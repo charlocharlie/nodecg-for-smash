@@ -1,7 +1,13 @@
 'use strict';
-
+var playerList = nodecg.Replicant('playerList', {defaultValue: ['']}); //persistent name list
+function updatePlayerList() {
+    $('#players').empty();
+    var arrayLength = playerList.value.length;
+    for (var i = 0; i < arrayLength; i++) {
+        $('#players').append('<option>' + playerList.value[i] + '</option>');
+    }
+}
 var $panel = $bundle.filter('.ssbm-players');
-
 var $update = $panel.find('.ssbm-players-update');
 var $swap = $panel.find('.ssbm-players-swap');
 
@@ -13,7 +19,19 @@ $swap.click(function() {
 	nodecg.sendMessage('ssbmPlayerUpdate', swapPlayers());
 });
 
+Array.prototype.pushIfNotExist = function(val) {
+    if (typeof(val) == 'undefined' || val == '') { return }
+    val = $.trim(val)
+    if ($.inArray(val, this) == -1) {
+        this.push(val);
+    }
+};
+
 function updateData() {
+    playerList.value.pushIfNotExist(document.getElementById("ssbm-p1Tag").value);
+    playerList.value.pushIfNotExist(document.getElementById("ssbm-p2Tag").value);
+    playerList.value.sort();
+    updatePlayerList();
 	return {
 		'p1Tag': $('#ssbm-p1Tag').val(),
 		'p1Score': $('#ssbm-p1Score').val(),
