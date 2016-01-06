@@ -7,11 +7,11 @@ $(function () {
 		var p1new = false;
 		var p2new = false;
 		if($('#p1tag').text() !== data.p1Tag) {
-			$('#player1').animate({left: "-100%"}, 1000);
+			$('#player1').animate({top: "48px"}, 1000);
 			p1new = true;
 		}
 		if($('#p2tag').text() !== data.p2Tag) {
-			$('#player2').animate({left: "100%"}, 1000);
+			$('#player2').animate({top: "48px"}, 1000);
 			p2new = true;
 		}
 
@@ -20,9 +20,9 @@ $(function () {
 		else setText(data);
 		
 		if(p1new)
-			$('#player1').animate({left: "0%"}, 1000);
+			$('#player1').animate({top: "8px"}, 1000);
 		if (p2new)
-			$('#player2').animate({left: "0%"}, 1000);
+			$('#player2').animate({top: "8px"}, 1000);
 	}
 
 	function setText(data) {

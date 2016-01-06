@@ -18,64 +18,102 @@
 }*/
 
 #container {
-	width: 1290px;
-	height: 50px;
+	width: 1280px;
+	height: 56px;
 }
 
 .player {
 	/*background: #11a105;*/
 	/*background: -moz-linear-gradient(top, #e8e7e9 0%, #a4a5a6 100%); /* FF3.6+ */
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e7e9), color-stop(100%,#a4a5a6)); /* Chrome,Safari4+ */
-	background-image: url('img/players.png');
-	width: 550px;
-	height: 45px;
-	float: left;
-	display: flex;
-	align-items: center;
-	position: relative;
+	width: 328px;
+	height: 32px;
+    top: 8px;
+    background-color: white;
+    border-radius: 4px;
+	/*display: flex;
+	align-items: center;*/
+	position: absolute;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.19),0px 8px 17px 0px rgba(0, 0, 0, 0.2);
 
 	font-family: 'Oxygen', helvetica, arial;
 	font-size: 20px;
-	color: white;
+	color: black;
 }
-
 #player1 {
-	margin-left: 5px;
-	margin-right: 90px;
+	left: 16px;
+}
+#player2 {
+	left: 528px;
 }
 
-#player2 {
-	margin-left: 90px;
+.scoreBox {
+    width: 28px;
+    height: 28px;
+    top: 2px;
+    background-color: #424242;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    margin-left: 4px;
+    margin-right: 4px;
+}
+#scoreP1{
+    /*left: 296px;*/
+    float: left;
+}
+#scoreP2{
+    /*left: 4px;*/
+    float: right;
 }
 
 .flag {
-	padding-right: 5px;
-	margin: 5px;
+	padding-right: 7px;
+	margin: 4px;
+}
+#p1flag {
+    float: left;
+}
+#p2flag{
+    float: right;    
 }
 
 .head {
-	padding-right: 4px;
-	margin: 5px;
+	padding-right: 6px;
+	margin: 4px;
+}
+#p1char {
+    float: left;
+}
+#p2char{
+    float: right;    
 }
 
 .tag {
-	margin-left: 5px;
-	margin-right: 5px;
-	flex-basis: 520px;
+	margin-left: 4px;
+	margin-right: 4px;
+	flex-basis: 288px;
+}
+#p1tag {
+	text-align: left;
+    float: left;
+}
+#p2tag {
+	text-align: right;
+    float: right;
 }
 
 .score {
-	width: 20px;
-	margin: 5px;
-	text-align: center;
-}
-
-#p2tag {
-	text-align: right;
+    color: white;
+	width: 28px;
+	text-align: center; 
+    font-weight: bold;
+    line-height: 28px;
+    font-size: 24px;
+    letter-spacing: -1px;
 }
 
 .playercontainer {
 	display: flex;
 	align-items: center;
-	width: 520px;
+	width: 328px;
+    height: 32px;
 }
