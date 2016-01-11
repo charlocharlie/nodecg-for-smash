@@ -10,6 +10,7 @@ function updatePlayerList() {
 var $panel = $bundle.filter('.ssbm-players');
 var $update = $panel.find('.ssbm-players-update');
 var $swap = $panel.find('.ssbm-players-swap');
+var $reset = $panel.find('.ssbm-players-reset');
 
 $update.click(function() {
 	nodecg.sendMessage('ssbmPlayerUpdate', updateData());
@@ -19,6 +20,9 @@ $swap.click(function() {
 	nodecg.sendMessage('ssbmPlayerUpdate', swapPlayers());
 });
 
+$reset.click(function() {
+    nodecg.sendMessage('ssbmPlayerUpdate', resetFields());
+});
 Array.prototype.pushIfNotExist = function(val) {
     if (typeof(val) == 'undefined' || val == '') { return }
     val = $.trim(val)
@@ -62,4 +66,15 @@ function swapPlayers() {
 	$('#ssbm-p2Flag').val(tmp.flag);
 
 	return updateData();
+}
+
+function resetFields() {
+    $('#ssbm-p1Tag').val("")
+    $('#ssbm-p1Score').val("0")
+    $('#ssbm-p1Char').val("none")
+    $('#ssbm-p1Flag').val("XX")
+    $('#ssbm-p2Tag').val("")
+    $('#ssbm-p2Score').val("0")
+    $('#ssbm-p2Char').val("none")
+    $('#ssbm-p2Flag').val("XX")
 }

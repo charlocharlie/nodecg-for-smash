@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
 	font-family: 'OswaldRegular';
     src: url('img/Oswald-Regular.eot');
     src: url('img/Oswald-Regular.ttf') format('truetype');
@@ -11,15 +11,18 @@
     src: url('img/Oswald-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}*/
+}
 
-/*body {
+body {
 	overflow: hidden;
-}*/
+}
 
 #container {
-	width: 1280px;
+	width: 900px;
 	height: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .player {
