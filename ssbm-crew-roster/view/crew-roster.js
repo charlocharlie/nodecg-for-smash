@@ -71,19 +71,19 @@ $(function() {
 	function hideRosters(data) {
 		var delay = 50;
 		var rosterSize = 10;
-		$('#rosterheaderleft').animate({left: "-275px"}, 500);
-		$('#rosterheaderright').animate({left: "275px"}, 500);
+		$('#rosterheaderleft').animate({left: "-436px"}, 500);
+		$('#rosterheaderright').animate({left: "436px"}, 500);
 		for (var i = 1; i <= rosterSize; i++) {
 			$('#rosterleft > div:nth-child(' + i + ')')
 				.delay(delay * i)
 				.queue(function(nxt) { 
-					$(this).animate({left: "-275px"}, 500);
+					$(this).animate({left: "-436px"}, 500);
 					nxt();
 				});
 			$('#rosterright > div:nth-child(' + i + ')')
 				.delay(delay * i)
 				.queue(function(nxt) { 
-					$(this).animate({left: "275px"}, 500);
+					$(this).animate({left: "436px"}, 500);
 					nxt();
 				});
 		}

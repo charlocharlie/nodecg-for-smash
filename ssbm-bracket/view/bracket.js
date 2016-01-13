@@ -2,7 +2,9 @@
 
 $(function() {
 	nodecg.listenFor('ssbmBracketUpdate', updateBracket);
-
+    nodecg.listenFor('ssbmBracketShow', showBracket);
+    nodecg.listenFor('ssbmBracketHide', hideBracket);
+    
 	function updateBracket(data) {
 		var loser = [0, 2, 1];
 		for (var i = 0; i < 11; i++) {
@@ -48,4 +50,12 @@ $(function() {
 		$('#bracket-link').text(data.link);
 		$('#bracket-name').text(data.title);
 	}
+    
+    function showBracket() {
+        $('.body').fadeIn(500);
+    }
+    
+    function hideBracket() {
+        $('.body').fadeOut(500);
+    }
 });

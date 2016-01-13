@@ -2,11 +2,21 @@
 
 var $panel = $bundle.filter('.ssbm-bracket');
 
+var $show = $panel.find('.ssbm-bracket-show');
+var $hide = $panel.find('.ssbm-bracket-hide');
 var $update = $panel.find('.ssbm-bracket-get-challonge');
 var $match = $('#ssbm-bracket-roundmatch');
 var $manual = $panel.find('.ssbm-bracket-manual-update');
 
 var bracket = [];
+
+$show.click(function () {
+	nodecg.sendMessage('ssbmBracketShow');
+});
+
+$hide.click(function () {
+	nodecg.sendMessage('ssbmBracketHide');
+});
 
 $update.click(function () {
 	nodecg.sendMessage('ssbmChallongeUpdate', getChallonge(), function(result) {
