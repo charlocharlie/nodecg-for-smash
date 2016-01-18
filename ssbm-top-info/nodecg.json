@@ -1,11 +1,13 @@
 {
 	"name": "ssbm-top-info",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"nodecgDependency": ">= 0.6.0",
-	"description": "Info text at top of game screen, with adjustable width and space between",
+	"description": "Info text at top of game screen.",
 	"homepage": "mikeparkms.com",
 	"authors": [
 		"Mike Park (@kaabistar)"
+        "Charlie Laabs (@charlocharlie)"
+
 	],
 	"license": "MIT"
 }

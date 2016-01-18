@@ -1,10 +1,11 @@
 {
 	"name": "ssbm-crew-roster",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"nodecgDependency": ">= 0.6.0",
 	"description": "Roster display for crew battles, up to 10 people on each team",
 	"authors": [
 		"Mike Park (@kaabistar)"
+        "Charlie Laabs (@charlocharlie)"
 	],
 	"license": "MIT"
 }

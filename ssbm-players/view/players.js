@@ -1,7 +1,9 @@
 'use strict';
-
+var topvar = 8; //For animation on a game by game basis in this js file.
 $(function () {
 	nodecg.listenFor('ssbmPlayerUpdate', updatePlayers);
+    nodecg.listenFor('smashLayoutUpdate', 'smash-game-switcher', updateLayout);
+    
 
 	function updatePlayers(data) {
 		var p1new = false;
@@ -20,9 +22,9 @@ $(function () {
 		else setText(data);
 		
 		if(p1new)
-			$('#player1').animate({top: "8px"}, 1000);
+			$('#player1').animate({top: topvar + "px"}, 1000);
 		if (p2new)
-			$('#player2').animate({top: "8px"}, 1000);
+			$('#player2').animate({top: topvar + "px"}, 1000);
 	}
 
 	function setText(data) {
@@ -61,4 +63,108 @@ $(function () {
 			}
 		}
 	});
+    
+    function updateLayout(data) {
+        if (data.game == '64') { //SMASH 64
+            $('.player').css({
+                width: '328px',
+                height: '32px',
+                top: '12px',
+                'font-size': '20px'
+            });
+            topvar = 12;
+            $('#player1').css({'left':'16px'});
+            $('#player2').css({'left':'616px'});
+            $('.tag').css({'flex-basis':'288px'});
+            $('.scoreBox').css({
+                width: '28px',
+                height: '28px'
+            });
+            $('.score').css({
+                width: '28px',
+                'line-height': '28px',
+                'font-size': '24px'
+            });
+            $('.playercontainer').css({
+                'width': '328px',
+                'height': '32px'
+            });
+        }
+        if (data.game == 'melee') { //MELEE
+            $('.player').css({
+                width: '328px',
+                height: '32px',
+                top: '8px',
+                'font-size': '20px'
+            });
+            topvar = 8;
+            $('#player1').css({'left':'16px'});
+            $('#player2').css({'left':'528px'});
+            $('.tag').css({'flex-basis':'288px'});
+            $('.scoreBox').css({
+                width: '28px',
+                height: '28px'
+                });
+            $('.score').css({
+                width: '28px',
+                'line-height': '28px',
+                'font-size': '24px'
+            });
+            $('.playercontainer').css({
+                'width': '328px',
+                'height': '32px'
+            });
+        }
+        if (data.game == 'pm') { //PROJECT M/BRAWL
+            $('.player').css({
+                width: '328px',
+                height: '32px',
+                top: '16px',
+                'font-size': '20px'
+            });
+            topvar = 16;
+            $('#player1').css({'left':'16px'});
+            $('#player2').css({'left':'568px'});
+            $('.tag').css({'flex-basis':'288px'});
+            $('.scoreBox').css({
+                width: '28px',
+                height: '28px'
+                });
+            $('.score').css({
+                width: '28px',
+                'line-height': '28px',
+                'font-size': '24px'
+            });
+            $('.playercontainer').css({
+                'width': '328px',
+                'height': '32px'
+            });
+        }
+        if (data.game == 'wiiu') { //SMASH FOR WII U
+            $('.player').css({
+                width: '232px',
+                height: '24px',
+                top: '32px',
+                'font-size': '15px'
+            });
+            topvar = 32;
+            $('#player1').css({'left':'256px'});
+            $('#player2').css({'left':'736px'});
+            $('.tag').css({'flex-basis':'232px'});
+            $('.scoreBox').css({
+                width: '20px',
+                height: '20px'       
+            });
+            $('.score').css({
+                width: '20px',
+                'line-height': '20px',
+                'font-size': '16px'
+            });
+            $('.playercontainer').css({
+                'width':'232px',
+                'height': '24px'
+            });
+        }
+        
+    }
 });

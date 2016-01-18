@@ -1,11 +1,12 @@
 {
 	"name": "ssbm-players",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"nodecgDependency": ">= 0.6.0",
 	"description": "Player name and score display for SSBM streams",
 	"homepage": "www.mikeparkms.com",
 	"authors": [
-		"Mike Park (@kaabistar)"
+		"Mike Park (@kaabistar)"        
+        "Charlie Laabs (@charlocharlie)"
 	],
 	"license": "MIT"
 }

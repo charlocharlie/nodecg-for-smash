@@ -1,0 +1,10 @@
+{
+    "name": "smash-game-switcher",
+    "nodecgDependency": ">= 0.6.0",
+    "description": "Easily change the CSS of all compatible bundles to support changing to a new game layout.",
+    "authors": [
+        "Charlie Laabs"
+    ],
+    "homepage": "https://twitter.com/charlocharlie",
+    "license": "MIT"
+}

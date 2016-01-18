@@ -1,32 +1,56 @@
-# NodeCG for Smash
+## Modifications by charlocharlie
+
+I have modified this set of bundles to fit into my streaming workflow for twitch.tv/PlattevilleSmash. I've modified the graphics to match my existing ones based on Google's material design standard. Besides graphical changes, I've also added some functional changes to some bundles to improve my workflow while streaming. I don't have much of a use for the components in the following folders. I probably will delete them in the future.
+* images
+* obs
+* ssbm-4players
+* ssbm-bg-helper
+* ssbm-scene-change
+
+I still need to work on ssbm-playercam. I've made these changes to the other bundles:
+
+### ssbm-bracket
+
+Redesigned to match the styling of a Challonge bracket page. Added bracket positions (Winners Finals, Losers Semifinals, etc.), and the winner's score is now highlighted. Also added a show and hide button along with and alpha channel background as it is intended to be shown over a player cam.
+
+### ssbm-crew-roster
+
+Purely graphical changes. Different color selection, drop shadow added, font resized. A little issue with one side of the crew roster casting a drop shadow on the other. Z-index cannot fix this, it's just the way the roster is animated in. I just reduced the drop shadow amount to hide the problem a little bit.
+
+### ssbm-lower-third
+
+Now animates outward on load, kind of useless though. Graphical redesign.
+
+### ssbm-players
+
+Added player database functionality (stores player names locally). Requires a file `nodecg/db/replicants/ssbm-players/playerList.rep` with the contents `[]`. Press 'Update' on the panel to load the database. The names are stored in a combobox (hover over tag entry field to view drop-down arrow). 
+Also added a reset fields button to the panel which clears all fields on the panel in preparation for a new set.
+Added graphical redesign and different positions/sizes for each Smash game layout using smash-game-switcher.
+
+### ssbm-top-info
+
+Graphical redesign and modifiable positions/sizes for each Smash game layout using smash-game-switcher.
+
+## smash-game-switcher
+
+This is a helper bundle I made to switch the other bundles' CSS between the layouts of Smash games. It uses nodecg event listeners that each invividual bundle can use to check which game layout is active.
+
+
+# NodeCG for Smash - ORIGINAL README
 
 Bundles for use with [NodeCG](http://nodecg.com/) in Super Smash Bros. Melee streams. Compatible with OBS. Xsplit may work, but I haven't tested it. This is browser-based, so it'll work on any OS.
 
 ## How to use
 
-### Everything pre-packaged (Windows only)
-1. Download the pre-packaged zip file in releases and extract.
-2. In command prompt/terminal, navigate to the `/nodecg` directory in the folder you extracted it to.
-  * In Windows, you can shift+right click in the explorer window you have the directory open in and click 'Open command window here'.
-3. In command prompt/terminal, type in `node.exe index.js` and hit enter.
-4. If you want to use the scene change bundle, set up [OBS Remote](http://www.obsremote.com/) with no password and install [OBS Remote JS](https://github.com/nodecg/obs-remote-js). If you want to use the pull from Challonge feature in the bracket bundle, get a [Challonge API key](http://api.challonge.com/v1) and replace ENTER API KEY HERE in /ssbm-bracket/node-challonge-ext.js with it.
-6. Go to localhost:9090 in your web browser to open the dashboard.
-7. Set up your stream overlay in OBS using [CLR Browser](https://obsproject.com/forum/resources/clr-browser-source-plugin.22/) and the links to the bundle views, available in the info button for each bundle in the dashboard.
-  * Alternatively, just import the default scene collection given in the `/obs` directory. Make sure CLR Browser is installed. If you want, you can also use the overlay given in the `/images` directory or make your own using the template in `/images/templates`.
-8. Use.
-9. This setup is portable, meaning that you can take your NodeCG setup to any Windows computer; just copy your nodecg folder.
-
-### Setup from scratch (Other OSs)
 1. Install [Node.js](https://nodejs.org/en/).
 2. Follow the [NodeCG install guide](http://nodecg.com/starter/installing.html)
-3. Download the source zip file in releases, put the contents in the /bundles directory in the NodeCG directory
+3. Clone/download this repo, put the contents in the /bundles directory in the NodeCG directory
 4. If you want to use the scene change bundle, set up [OBS Remote](http://www.obsremote.com/) with no password and install [OBS Remote JS](https://github.com/nodecg/obs-remote-js). If you want to use the pull from Challonge feature in the bracket bundle, get a [Challonge API key](http://api.challonge.com/v1) and replace ENTER API KEY HERE in /ssbm-bracket/node-challonge-ext.js with it.
 5. Start NodeCG
 6. Go to localhost:9090 in your web browser to open the dashboard.
 7. Set up your stream overlay in OBS using [CLR Browser](https://obsproject.com/forum/resources/clr-browser-source-plugin.22/) and the links to the bundle views, available in the info button for each bundle in the dashboard.
   * Alternatively, just import the default scene collection given in the `/obs` directory. Make sure CLR Browser is installed. If you want, you can also use the overlay given in the `/images` directory or make your own using the template in `/images/templates`.
 8. Use.
-9. This setup can be made portable, just put the appropriate Node.js executable for your OS in the NodeCG folder and copy that folder.
 
 ## Overview of included bundles
 
@@ -64,7 +88,7 @@ Misc. info display to show at the top of the game screen. You can also send a po
 
 ### ssbm-bg-helper
 
-Helper bundle to adjust the backgrounds for ssbm-4players, ssbm-playercam, ssbm-players, and ssbm-top-info. Choose to use an image or a solid color with adjustable corner radius.
+Helper bundle to adjust the backgrounds for ssbm-4playres, ssbm-playercam, ssbm-players, and ssbm-top-info. Choose to use an image or a solid color with adjustable corner radius.
 
 ## Images
 
