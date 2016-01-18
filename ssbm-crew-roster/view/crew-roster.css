@@ -14,15 +14,19 @@
 }
 
 #rostercontainer {
-	width: 550px;
-	height: 330px;
+	width: 1280px;
+	height: 400px;
+    left: 0px;
+    top: 0px;
 	font-family: 'Oxygen', helvetica, arial;
-    
+    overflow: hidden;
 }
 
 #rosterheadercontainer {
 	width: 550px;
 	height: 30px;
+    left: 161px;
+    position: relative;
 }
 
 .rosterheader {
@@ -42,7 +46,7 @@
 #rosterheaderright {
 	background-color: rgb(255, 109, 0);
 	position: relative;
-	left: 436px;
+	left: 456px;
 }
 
 .crewname {
@@ -96,14 +100,17 @@
 	height: 300px;
 	float: left;
 	font-size: 1.20em;
+    position: relative;
 }
 
 #rosterleft {
 	text-align: right;
+    left: 161px;
 }
 
 #rosterright {
 	text-align: left;
+    left: 161px;
 }
 
 .rosterentry {
@@ -126,5 +133,5 @@
 #rosterright .rosterentry {
 	padding-left: 10px;
 	position: relative;
-	left: 436px;
+	left: 456px;
 }

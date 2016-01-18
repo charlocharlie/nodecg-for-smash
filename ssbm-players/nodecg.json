@@ -5,7 +5,7 @@
 	"description": "Player name and score display for SSBM streams",
 	"homepage": "www.mikeparkms.com",
 	"authors": [
-		"Mike Park (@kaabistar)"        
+		"Mike Park (@kaabistar)",     
         "Charlie Laabs (@charlocharlie)"
 	],
 	"license": "MIT"

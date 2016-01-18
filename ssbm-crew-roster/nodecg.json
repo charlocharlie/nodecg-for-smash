@@ -4,7 +4,7 @@
 	"nodecgDependency": ">= 0.6.0",
 	"description": "Roster display for crew battles, up to 10 people on each team",
 	"authors": [
-		"Mike Park (@kaabistar)"
+		"Mike Park (@kaabistar)",
         "Charlie Laabs (@charlocharlie)"
 	],
 	"license": "MIT"
