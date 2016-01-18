@@ -58,6 +58,7 @@ body {
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
     margin-left: 4px;
     margin-right: 4px;
+    flex-shrink: 0;
 }
 #scoreP1{
     /*left: 296px;*/
@@ -94,6 +95,8 @@ body {
 	margin-left: 4px;
 	margin-right: 4px;
 	flex-basis: 288px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 #p1tag {
 	text-align: left;

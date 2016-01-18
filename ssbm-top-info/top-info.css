@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'OswaldRegular';
+    src: url('img/Oswald-Regular.eot');
+    src: url('img/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OswaldBold';
+    src: url('img/Oswald-Bold.eot');
+    src: url('img/Oswald-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	overflow: hidden;
+}
+
+#container {
+	width: 1280px;
+	height: 64px;
+	/*display: inline-flex;*/
+	/*justify-content: center;*/
+	position: absolute;
+	/*padding-top: 3px;*/
+	color: #000000;
+    top: 0;
+    left: 0;
+}
+
+.panel {
+	/*border-radius: 5px;*/
+	/*background: #11a105;*/
+	/*background: -moz-linear-gradient(top, #e8e7e9 0%, #a4a5a6 100%); /* FF3.6+ */
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e7e9), color-stop(100%,#a4a5a6)); /* Chrome,Safari4+ */
+	/*background-image: url('img/top info.png'); */
+	width: 240px;
+	height: 40px;
+    top: 16px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+	position: absolute;
+
+	text-align: center;
+	font-family: 'Oxygen', helvetica, arial;
+	font-size: 20px;
+	line-height: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#panel1 {
+	/*margin-right: 50px;*/
+	left: 104;
+}
+
+#panel2 {
+	/*margin-left: 50px;*/
+	left: 528px;
+}
+
+#message {
+	width: 0;
+	height: 40px;
+    top: 16px;
+	background: #424242;
+    color: #FFF;
+	border-radius: 4px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+	position: absolute;
+	left: 436px;
+
+	text-align: center;
+	font-family: 'Oxygen', helvetica, arial;
+	font-size: 20px;
+	line-height: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#message-text {
+	display: none;
+}
