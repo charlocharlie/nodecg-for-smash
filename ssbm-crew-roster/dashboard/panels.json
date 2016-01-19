@@ -1,8 +1,9 @@
 [
 	{
-		"name": "ssbm-crew-roster",
+        "name": "ssbm-crew-roster",
 		"title": "Crew Battle Roster",
 		"width": 4,
-		"file": "panel.html"
+		"file": "panel.html",
+        "faIcon": "fa-trophy"
 	}
 ]

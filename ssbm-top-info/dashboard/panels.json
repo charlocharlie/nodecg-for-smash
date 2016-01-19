@@ -3,6 +3,7 @@
 		"name": "ssbm-top-info",
 		"title": "SSBM Top Info",
 		"width": 2,
-		"file": "panel.html"
+		"file": "panel.html",
+        "faIcon": "fa-info"
 	}
 ]

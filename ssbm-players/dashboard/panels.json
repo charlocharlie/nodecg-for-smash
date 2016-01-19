@@ -3,6 +3,7 @@
 		"name": "ssbm-players",
 		"title": "SSBM Players",
 		"width": 2,
-		"file": "panel.html"
+		"file": "panel.html",
+        "faIcon": "fa-hand-scissors-o"
 	}
 ]

@@ -3,6 +3,7 @@
 		"name": "smash-game-swticher",
 		"title": "Smash Game Switcher",
 		"width": 2,
-		"file": "panel.html"
+		"file": "panel.html",
+        "faIcon": "fa-television"
 	}
 ]
