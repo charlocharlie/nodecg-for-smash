@@ -33,7 +33,7 @@
 	height: 67px;
 	font-size: 3.25em;
     text-shadow: 2px 2px 2px #222;
-    font-family: FranklinDemi;
+    font-family: FranklinDemi, helvetica, arial;
 }
 
 #bracket-link {
@@ -41,7 +41,7 @@
 	height: 42px;
 	font-size: 1.5em;
     color: #757575;
-    font-family: FranklinMedium;
+    font-family: FranklinMedium, helvetica, arial;
 }
 
 #bracket {

@@ -1,13 +1,17 @@
 ## Modifications by charlocharlie
 
-I have modified this set of bundles to fit into my streaming workflow for twitch.tv/PlattevilleSmash. I've modified the graphics to match my existing ones based on Google's material design standard. Besides graphical changes, I've also added some functional changes to some bundles to improve my workflow while streaming. I don't have much of a use for the components in the following folders. I probably will delete them in the future.
+I have modified this set of bundles to fit into my streaming workflow for twitch.tv/PlattevilleSmash. I've modified the graphics to match my existing ones based on Google's material design standard. Besides graphical changes, I've also added some functional changes to some bundles to improve my workflow while streaming. 
+
+I don't have much of a use for the components in the following folders, so I have deleted them:
 * images
 * obs
 * ssbm-4players
 * ssbm-bg-helper
 * ssbm-scene-change
 
-Each bundle requires Franklin Gothic Cond Demi and Franklin Gothic Cond Medium. Place `FRADMCN.TTF` and `FRAMDCN.TTF` into `/view/img/` of each of the bundles I modified.
+Each bundle requires Franklin Gothic Cond Demi and Franklin Gothic Cond Medium. Place `FRADMCN.TTF` and `FRAMDCN.TTF` into `/view/img/` of each of the bundles I modified. 
+
+I also included the layouts I use for 64, Melee, and PM so you can see where the assets fit in to the layout. The Wii U layout doesn't need an overlay because it is fullscreened on the stream.
 
 I've made these changes to the other bundles:
 
@@ -34,7 +38,7 @@ Now animates outward on load, kind of useless though. Graphical redesign.
 
 Added player database functionality (stores player names locally). Requires a file `nodecg/db/replicants/ssbm-players/playerList.rep` with the contents `[]`. Press 'Update' on the panel to load the database. The names are stored in a combobox (hover over tag entry field to view drop-down arrow). 
 Also added a reset fields button to the panel which clears all fields on the panel in preparation for a new set.
-Added graphical redesign and different positions/sizes for each Smash game layout using smash-game-switcher.
+Added graphical redesign and different positions/sizes for each Smash game layout using smash-game-switcher. The character icons and flags don't fit well on the Wii U layout due to the smaller size.
 
 ### ssbm-top-info
 
