@@ -11,10 +11,10 @@ I don't have much of a use for the components in the following folders, so I hav
 
 Each bundle requires Franklin Gothic Cond Demi and Franklin Gothic Cond Medium. Place `FRADMCN.TTF` and `FRAMDCN.TTF` into `/view/img/` of each of the bundles I modified. 
 
-I also included the layouts I use for 64, Melee, and PM so you can see where the assets fit in to the layout. The Wii U layout doesn't need an overlay because it is fullscreened on the stream.
+I also included the layouts I use for 64, Melee, and PM so you can see where the assets fit in to the layout. The Wii U layout doesn't need an overlay because it is fullscreened on the stream. 
+The layouts are optimized for the [proper aspect ratio](https://www.reddit.com/r/smashbros/comments/38igh7/aspect_ratio_what_melee_and_pm_streams_are_doing/) for each game and places the edges of moving frames on the edge of H264 macroblocks. This makes edges more crisp when streaming at a lower bitrate.
 
 I've made these changes to the other bundles:
-
 ### ssbm-bracket
 
 Redesigned to match the styling of a Challonge bracket page. Added bracket positions (Winners Finals, Losers Semifinals, etc.), and the winner's score is now highlighted. Also added a show and hide button along with and alpha channel background as it is intended to be shown over a player cam.
