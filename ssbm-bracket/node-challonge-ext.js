@@ -1,8 +1,9 @@
 module.exports = function(nodecg) {
+    var key = nodecg.bundleConfig.apikey;
 	var challonge = require('./node-challonge');
 
 	var client = challonge.createClient({
-		apiKey: 'YlETxrtIVBw6w1WQNJNFpqsrMIqwFEIoFy5472Uy'
+		apiKey: key
 	});
 
 	var matches = {};

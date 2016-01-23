@@ -5,19 +5,50 @@ body {
 #container {
 	position: absolute;
 	top: 0%;
-	width: 500px;
-	height: 40px;
+	width: 408px;
+	height: 56px;
 	/*background: -moz-linear-gradient(top, #e8e7e9 0%, #a4a5a6 100%); /* FF3.6+ */
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e7e9), color-stop(100%,#a4a5a6)); /* Chrome,Safari4+ */
-	background-image: url('img/playercam.png');
+	/*background-image: url('img/playercam.png');*/
 	font-family: 'Oxygen', helvetica, arial;
-	color: white;
+	color: #000;
 	font-size: 20px;
 }
 
-#text {
-	text-align: center;
+.rectangle {
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.19),0px 8px 17px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 384px;
+    height: 32px;
+}
+
+.mic {
+	position: absolute;
+    margin-top: 2px;
+    left: 182px
+}
+
+.text {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+    width: 178px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#textLeft {
+    text-align: left;
+    float: left;
+    margin-left: 4px;
+}
+
+#textRight {
+    text-align: right;
+    float: right;
+    margin-right: 4px;
 }

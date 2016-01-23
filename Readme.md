@@ -13,6 +13,13 @@ I still need to work on ssbm-playercam. I've made these changes to the other bun
 
 Redesigned to match the styling of a Challonge bracket page. Added bracket positions (Winners Finals, Losers Semifinals, etc.), and the winner's score is now highlighted. Also added a show and hide button along with and alpha channel background as it is intended to be shown over a player cam.
 
+Now uses a nodecg cfg file to store the API key. Create the file `nodecg/cfg/ssbm-bracket` with the contents:
+```
+{
+    "apikey": "abcdefg123456789xyzabcdefg123456789xyz"
+}
+```
+
 ### ssbm-crew-roster
 
 Purely graphical changes. Different color selection, drop shadow added, font resized. A little issue with one side of the crew roster casting a drop shadow on the other. Z-index cannot fix this, it's just the way the roster is animated in. I just reduced the drop shadow amount to hide the problem a little bit.
@@ -30,6 +37,10 @@ Added graphical redesign and different positions/sizes for each Smash game layou
 ### ssbm-top-info
 
 Graphical redesign and modifiable positions/sizes for each Smash game layout using smash-game-switcher.
+
+### ssbm-playercam
+
+Repurposed as a commentator label. Able to add 2 names that are put on the same rectangle left and right justified. Supports modifiable CSS using smash-game-switcher.
 
 ## smash-game-switcher
 

@@ -1,7 +1,7 @@
 [
 	{
 		"name": "ssbm-playercam",
-		"title": "Playercam Label",
+		"title": "Commentator Label",
 		"width": 2,
 		"file": "panel.html"
 	}

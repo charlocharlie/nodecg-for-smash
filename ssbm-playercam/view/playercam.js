@@ -2,27 +2,49 @@
 
 $(function() {
 	nodecg.listenFor('ssbmPlayercam', updateLabel);
-
+    nodecg.listenFor('smashLayoutUpdate', 'smash-game-switcher', updateLayout);
+    
 	function updateLabel(data) {
-		$('#container').animate({top: "100%"}, {duration: 1000, complete: function() {
-			$('#text').text(data);
+		$('#container').animate({top: "56px"}, {duration: 500, complete: function() {
+			$('#textLeft').text(data.commentatorLeft);
+            $('#textRight').text(data.commentatorRight);
 		}});
 		$('#container').animate({top: "0%"}, 1000);
 	}
 
-	var bgInfo = nodecg.Replicant('bgInfo', 'ssbm-bg-helper');
-
-	bgInfo.on('change', function(oldValue, newValue) {
-		if(oldValue) {
-			if(oldValue.image && newValue.image) return;
-			else if (newValue.image) {
-				$('#container').css('background', 'none');
-				$('#container').css('background-image', 'url("img/playercam.png")');
-			} else {
-				$('#container').css('background-image', 'none');
-				$('#container').css('background', '#' + newValue.color);
-				$('#container').css('border-radius', newValue.corner + 'px')
-			}
-		}
-	});
+	function updateLayout(data) {
+        if (data.game == '64') { //SMASH 64
+            $('.rectangle').css({
+                left: '96px',
+                width: '296px',
+            });
+            $('.mic').css({left: '139px'});
+            $('.text').css({width: '135px'});
+        }
+        if (data.game == 'melee') { //MELEE
+            $('.rectangle').css({
+                left: '8px',
+                width: '384px',
+            });
+            $('.mic').css({left: '182px'});
+            $('.text').css({width: '178px'});
+        }
+        if (data.game == 'pm') { //PROJECT M/BRAWL
+            $('.rectangle').css({
+                left: '56px',
+                width: '336px',
+            });
+            $('.mic').css({left: '159px'});
+            $('.text').css({width: '155px'});
+        }
+        if (data.game == 'wiiu') { //SMASH FOR WII U
+            $('.rectangle').css({
+                left: '8px',
+                width: '384px',
+            });
+            $('.mic').css({left: '182px'});
+            $('.text').css({width: '178px'});
+        }
+        
+    }
 });
