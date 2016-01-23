@@ -1,17 +1,17 @@
 @font-face {
-	font-family: 'OswaldRegular';
-    src: url('img/Oswald-Regular.eot');
-    src: url('img/Oswald-Regular.ttf') format('truetype');
+    font-family: FranklinMedium;
+    src: url('img/FRAMDCN.TTF');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'OswaldBold';
-    src: url('img/Oswald-Bold.eot');
-    src: url('img/Oswald-Bold.ttf') format('truetype');
+    font-family: FranklinDemi;
+    src: url('img/FRADMCN.TTF');
     font-weight: normal;
     font-style: normal;
 }
+
 
 body {
 	overflow: hidden;
@@ -39,8 +39,8 @@ body {
 	position: absolute;
     box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.19),0px 8px 17px 0px rgba(0, 0, 0, 0.2);
 
-	font-family: 'Oxygen', helvetica, arial;
-	font-size: 20px;
+	font-family: FranklinMedium, helvetica, arial;
+	font-size: 22px;
 	color: black;
 }
 #player1 {
@@ -109,6 +109,7 @@ body {
 
 .score {
     color: white;
+    font-family: FranklinDemi, helvetica, arial;
 	width: 28px;
 	text-align: center; 
     font-weight: bold;

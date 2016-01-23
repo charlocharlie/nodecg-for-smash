@@ -7,7 +7,9 @@ I have modified this set of bundles to fit into my streaming workflow for twitch
 * ssbm-bg-helper
 * ssbm-scene-change
 
-I still need to work on ssbm-playercam. I've made these changes to the other bundles:
+Each bundle requires Franklin Gothic Cond Demi and Franklin Gothic Cond Medium. Place `FRADMCN.TTF` and `FRAMDCN.TTF` into `/view/img/` of each of the bundles I modified.
+
+I've made these changes to the other bundles:
 
 ### ssbm-bracket
 

@@ -1,14 +1,13 @@
 @font-face {
-	font-family: 'OswaldRegular';
-    src: url('img/Oswald-Regular.eot');
-    src: url('img/Oswald-Regular.ttf') format('truetype');
+    font-family: FranklinMedium;
+    src: url('img/FRAMDCN.TTF');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'OswaldBold';
-    src: url('img/Oswald-Bold.eot');
-    src: url('img/Oswald-Bold.ttf') format('truetype');
+    font-family: FranklinDemi;
+    src: url('img/FRADMCN.TTF');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,9 +43,11 @@ body {
 	position: absolute;
 
 	text-align: center;
-	font-family: 'Oxygen', helvetica, arial;
-	font-size: 20px;
-	line-height: 45px;
+	font-family: FranklinDemi, helvetica, arial;
+	font-size: 26px;
+	line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #panel1 {
@@ -71,9 +72,11 @@ body {
 	left: 436px;
 
 	text-align: center;
-	font-family: 'Oxygen', helvetica, arial;
-	font-size: 20px;
-	line-height: 45px;
+	font-family: FranklinMedium, helvetica, arial;
+	font-size: 22px;
+	line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #message-text {

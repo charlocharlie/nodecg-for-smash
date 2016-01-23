@@ -1,14 +1,13 @@
 @font-face {
-	font-family: 'OswaldRegular';
-    src: url('img/fonts/Oswald-Regular.eot');
-    src: url('img/fonts/Oswald-Regular.ttf') format('truetype');
+    font-family: FranklinMedium;
+    src: url('img/FRAMDCN.TTF');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'OswaldBold';
-    src: url('img/fonts/Oswald-Bold.eot');
-    src: url('img/fonts/Oswald-Bold.ttf') format('truetype');
+    font-family: FranklinDemi;
+    src: url('img/FRADMCN.TTF');
     font-weight: normal;
     font-style: normal;
 }
@@ -73,7 +72,7 @@ body {
     animation-duration: 1s;
 
 
-  	font-family: 'Oxygen', helvetica, arial;
+  	font-family: FranklinDemi, helvetica, arial;
 }
 @keyframes loadAnim {
     0% {
@@ -85,8 +84,9 @@ body {
 }
 #lowerthirdtoptext {
 	width: 920px;
-	padding: 0px 0 5px 196px;
-  	font-size: 3em;
+	padding: 0px 0 0px 196px;
+  	font-size: 63px;
+    line-height: 63px;
     font-weight: bold;
   	color: #000000;
 }
@@ -101,7 +101,9 @@ body {
 
 #lowerthirdbottomtext {
 	width: 920px;
-	padding: 0px 0 0 196px;
-	font-size: 1.5em;
+	padding: 4px 0 0 196px;
+    font-family: FranklinMedium;
+    line-height: 26px;
+	font-size: 26px;
 	color: #424242;
 }

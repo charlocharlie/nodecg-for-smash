@@ -21,7 +21,7 @@ $swap.click(function() {
 });
 
 $reset.click(function() {
-    nodecg.sendMessage('ssbmPlayerUpdate', resetFields());
+    resetFields();
 });
 Array.prototype.pushIfNotExist = function(val) {
     if (typeof(val) == 'undefined' || val == '') { return }

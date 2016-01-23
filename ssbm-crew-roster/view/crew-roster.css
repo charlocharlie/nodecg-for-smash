@@ -1,14 +1,13 @@
 @font-face {
-	font-family: 'OswaldRegular';
-    src: url('img/fonts/Oswald-Regular.eot');
-    src: url('img/fonts/Oswald-Regular.ttf') format('truetype');
+    font-family: FranklinMedium;
+    src: url('img/FRAMDCN.TTF');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'OswaldBold';
-    src: url('img/fonts/Oswald-Bold.eot');
-    src: url('img/fonts/Oswald-Bold.ttf') format('truetype');
+    font-family: FranklinDemi;
+    src: url('img/FRADMCN.TTF');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,7 +17,7 @@
 	height: 400px;
     left: 0px;
     top: 0px;
-	font-family: 'Oxygen', helvetica, arial;
+	font-family: FranklinDemi, helvetica, arial;
     overflow: hidden;
 }
 
@@ -56,6 +55,7 @@
 	overflow: hidden;
 	line-height: 30px;
     font-weight: bold;
+    font-size: 26px;
 }
 
 #crewnameleft {
@@ -73,7 +73,7 @@
 	float: left;
 	overflow: hidden;
 	line-height: 30px;
-	font-size: 1.5em;
+	font-size: 26px;
     font-weight: bold;
 }
 
@@ -99,7 +99,9 @@
 	width: 275px;
 	height: 300px;
 	float: left;
-	font-size: 1.20em;
+	font-size: 24px;
+    line-height: 26px;
+    font-family: FranklinMedium, helvetica, arial;
     position: relative;
 }
 
