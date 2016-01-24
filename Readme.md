@@ -38,7 +38,8 @@ Now animates outward on load, kind of useless though. Graphical redesign.
 
 Added player database functionality (stores player names locally). Requires a file `nodecg/db/replicants/ssbm-players/playerList.rep` with the contents `[]`. Press 'Update' on the panel to load the database. The names are stored in a combobox (hover over tag entry field to view drop-down arrow). 
 Also added a reset fields button to the panel which clears all fields on the panel in preparation for a new set.
-Added graphical redesign and different positions/sizes for each Smash game layout using smash-game-switcher. The character icons and flags don't fit well on the Wii U layout due to the smaller size.
+Added graphical redesign and different positions/sizes for each Smash game layout using smash-game-switcher.
+Added stock icons for characters in every game, including the special costume stock icons for certain characters in Wii U.
 
 ### ssbm-top-info
 

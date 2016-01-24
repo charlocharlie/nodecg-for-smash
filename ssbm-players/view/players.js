@@ -34,10 +34,10 @@ $(function () {
 		$('#p2score').text(data.p2Score);
 
 		if(data.p1Char) {
-			$('#p1char').attr('class', 'head head-' + data.p1Char);
+			$('#p1char').attr('class', 'head heads ' + data.p1Char);
 		}
 		if(data.p2Char) {
-			$('#p2char').attr('class', 'head head-' + data.p2Char);
+			$('#p2char').attr('class', 'head heads ' + data.p2Char);
 		}
 		if(data.p1Flag) {
 			$('#p1flag').attr('class', 'flag flag-' + data.p1Flag.toLowerCase());
