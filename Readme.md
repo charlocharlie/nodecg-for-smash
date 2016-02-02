@@ -27,7 +27,7 @@ Now uses a nodecg cfg file to store the API key. Create the file `nodecg/cfg/ssb
 ```
 Here's an example of ssbm-bracket in action (you can also see ssbm-lower-third there, too):
 
-![ssbm-bracket example](http://i.imgur.com/IaBodAd.gifv "ssbm-bracket example")
+![ssbm-bracket example](https://giant.gfycat.com/ConstantPointedGeese.gif "ssbm-bracket example")
 
 ### ssbm-crew-roster
 
@@ -50,7 +50,7 @@ Added stock icons for characters in every game, including the special costume st
 
 Graphical redesign and modifiable positions/sizes for each Smash game layout using smash-game-switcher.
 
-![ssbm-top-info example](http://i.imgur.com/xvSp75U.gifv "ssbm-top-info example")
+![ssbm-top-info example](https://fat.gfycat.com/AptEnchantedBuckeyebutterfly.gif "ssbm-top-info example")
 
 ### ssbm-playercam
 
