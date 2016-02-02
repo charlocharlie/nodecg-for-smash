@@ -16,7 +16,7 @@ $(function() {
 			if(data.bracket[i].winner != 0) {
 				$('#' + data.bracket[i].roundMatch + 'p' + loser[data.bracket[i].winner] + ' > .score').css({
 					'color': '#111',
-					'background-color': '808080',
+					'background-color': '#808080',
 					'text-decoration': 'none'
 				});
                 $('#' + data.bracket[i].roundMatch + 'p' + loser[data.bracket[i].winner] + ' > .name').css({

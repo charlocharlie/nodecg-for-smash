@@ -25,6 +25,9 @@ Now uses a nodecg cfg file to store the API key. Create the file `nodecg/cfg/ssb
     "apikey": "abcdefg123456789xyzabcdefg123456789xyz"
 }
 ```
+Here's an example of ssbm-bracket in action (you can also see ssbm-lower-third there, too):
+
+![ssbm-bracket example](http://i.imgur.com/IaBodAd.gifv "ssbm-bracket example")
 
 ### ssbm-crew-roster
 
@@ -41,9 +44,13 @@ Also added a reset fields button to the panel which clears all fields on the pan
 Added graphical redesign and different positions/sizes for each Smash game layout using smash-game-switcher.
 Added stock icons for characters in every game, including the special costume stock icons for certain characters in Wii U.
 
+![ssbm-players example](http://i.imgur.com/AXNVu8E.gif "ssbm-players example")
+
 ### ssbm-top-info
 
 Graphical redesign and modifiable positions/sizes for each Smash game layout using smash-game-switcher.
+
+![ssbm-top-info example](http://i.imgur.com/xvSp75U.gifv "ssbm-top-info example")
 
 ### ssbm-playercam
 

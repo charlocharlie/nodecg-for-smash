@@ -15,6 +15,7 @@
 .body {
     overflow: hidden;
     display: none;
+    will-change: opacity;
 }
 .container {
     width: 1600;
