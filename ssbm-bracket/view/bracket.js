@@ -11,8 +11,10 @@ $(function() {
 			if (!data.bracket[i]) return;
 			$('#' + data.bracket[i].roundMatch + 'p1 > .name').text(data.bracket[i].p1name);
 			$('#' + data.bracket[i].roundMatch + 'p1 > .score').text(data.bracket[i].score[0]);
+            $('#' + data.bracket[i].roundMatch + 'p1 > .score').css({'background-color': '#808080'});
 			$('#' + data.bracket[i].roundMatch + 'p2 > .name').text(data.bracket[i].p2name);
 			$('#' + data.bracket[i].roundMatch + 'p2 > .score').text(data.bracket[i].score[1]);
+            $('#' + data.bracket[i].roundMatch + 'p2 > .score').css({'background-color': '#808080'});
 			if(data.bracket[i].winner != 0) {
 				$('#' + data.bracket[i].roundMatch + 'p' + loser[data.bracket[i].winner] + ' > .score').css({
 					'color': '#111',
