@@ -1,0 +1,795 @@
+.heads {
+    margin-top: 4px;
+    background-image: url('spritesheet.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline-block;
+    position: relative
+}
+
+.n64 {
+    width: 16px;
+    height: 20px;
+}
+
+.none {
+    background-position: -960 0px;
+    width: 0px;
+    height: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.n64_captainfalcon {
+    background-position: 0px 0px
+}
+
+.n64_donkey {
+    background-position: -16px 0px
+}
+
+.n64_fox {
+    background-position: -32px 0px
+}
+
+.n64_jigglypuff {
+    background-position: -48px 0px
+}
+
+.n64_kirby {
+    background-position: -64px 0px
+}
+
+.n64_link {
+    background-position: -80px 0px
+}
+
+.n64_luigi {
+    background-position: -96px 0px
+}
+
+.n64_mario {
+    background-position: -112px 0px
+}
+
+.n64_ness {
+    background-position: -128px 0px
+}
+
+.n64_pikachu {
+    background-position: -144px 0px
+}
+
+.n64_samus {
+    background-position: -160px 0px
+}
+
+.n64_yoshi {
+    background-position: -176px 0px
+}
+
+.melee_bowser {
+    background-position: 0px -20px
+}
+
+.melee_captainfalcon {
+    background-position: -20px -20px
+}
+
+.melee_donkey {
+    background-position: -40px -20px
+}
+
+.melee_drmario {
+    background-position: -60px -20px
+}
+
+.melee_falco {
+    background-position: -80px -20px
+}
+
+.melee_fox {
+    background-position: -100px -20px
+}
+
+.melee_ganon {
+    background-position: -120px -20px
+}
+
+.melee_gaw {
+    background-position: -140px -20px
+}
+
+.melee_jigglypuff {
+    background-position: -160px -20px
+}
+
+.melee_kirby {
+    background-position: -180px -20px
+}
+
+.melee_link {
+    background-position: -200px -20px
+}
+
+.melee_luigi {
+    background-position: -220px -20px
+}
+
+.melee_mario {
+    background-position: -240px -20px
+}
+
+.melee_marth {
+    background-position: -260px -20px
+}
+
+.melee_mewtwo {
+    background-position: -280px -20px
+}
+
+.melee_ness {
+    background-position: -300px -20px
+}
+
+.melee_peach {
+    background-position: -320px -20px
+}
+
+.melee_pichu {
+    background-position: -340px -20px
+}
+
+.melee_pikachu {
+    background-position: -360px -20px
+}
+
+.melee_popo {
+    background-position: -380px -20px
+}
+
+.melee_roy {
+    background-position: -400px -20px
+}
+
+.melee_samus {
+    background-position: -420px -20px
+}
+
+.melee_sheik {
+    background-position: -440px -20px
+}
+
+.melee_yoshi {
+    background-position: -460px -20px
+}
+
+.melee_younglink {
+    background-position: -480px -20px
+}
+
+.melee_zelda {
+    background-position: -500px -20px
+}
+
+.brawl_bowser {
+    background-position: 0px -40px
+}
+
+.brawl_captainfalcon {
+    background-position: -20px -40px
+}
+
+.brawl_charizard {
+    background-position: -40px -40px
+}
+
+.brawl_d3 {
+    background-position: -60px -40px
+}
+
+.brawl_diddy {
+    background-position: -80px -40px
+}
+
+.brawl_donkey {
+    background-position: -100px -40px
+}
+
+.brawl_falco {
+    background-position: -120px -40px
+}
+
+.brawl_fox {
+    background-position: -140px -40px
+}
+
+.brawl_ganon {
+    background-position: -160px -40px
+}
+
+.brawl_gaw {
+    background-position: -180px -40px
+}
+
+.brawl_ike {
+    background-position: -200px -40px
+}
+
+.brawl_ivysaur {
+    background-position: -220px -40px
+}
+
+.brawl_jigglypuff {
+    background-position: -240px -40px
+}
+
+.brawl_kirby {
+    background-position: -260px -40px
+}
+
+.brawl_link {
+    background-position: -280px -40px
+}
+
+.brawl_lucario {
+    background-position: -300px -40px
+}
+
+.brawl_lucas {
+    background-position: -320px -40px
+}
+
+.brawl_luigi {
+    background-position: -340px -40px
+}
+
+.brawl_mario {
+    background-position: -360px -40px
+}
+
+.brawl_marth {
+    background-position: -380px -40px
+}
+
+.brawl_mk {
+    background-position: -400px -40px
+}
+
+.brawl_ness {
+    background-position: -420px -40px
+}
+
+.brawl_olimar {
+    background-position: -440px -40px
+}
+
+.brawl_peach {
+    background-position: -460px -40px
+}
+
+.brawl_pikachu {
+    background-position: -480px -40px
+}
+
+.brawl_pit {
+    background-position: -500px -40px
+}
+
+.brawl_popo {
+    background-position: -520px -40px
+}
+
+.brawl_pt {
+    background-position: -540px -40px
+}
+
+.brawl_rob {
+    background-position: -560px -40px
+}
+
+.brawl_samus {
+    background-position: -580px -40px
+}
+
+.brawl_sheik {
+    background-position: -600px -40px
+}
+
+.brawl_snake {
+    background-position: -620px -40px
+}
+
+.brawl_sonic {
+    background-position: -640px -40px
+}
+
+.brawl_squirtle {
+    background-position: -660px -40px
+}
+
+.brawl_toonlink {
+    background-position: -680px -40px
+}
+
+.brawl_wario {
+    background-position: -700px -40px
+}
+
+.brawl_wolf {
+    background-position: -720px -40px
+}
+
+.brawl_yoshi {
+    background-position: -740px -40px
+}
+
+.brawl_zelda {
+    background-position: -760px -40px
+}
+
+.brawl_zss {
+    background-position: -780px -40px
+}
+
+.brawl_random {
+    background-position: -520px -20px
+}
+
+.pm_bowser {
+    background-position: 0px -80px
+}
+
+.pm_captainfalcon {
+    background-position: -20px -80px
+}
+
+.pm_charizard {
+    background-position: -40px -80px
+}
+
+.pm_d3 {
+    background-position: -60px -80px
+}
+
+.pm_diddy {
+    background-position: -80px -80px
+}
+
+.pm_donkey {
+    background-position: -100px -80px
+}
+
+.pm_falco {
+    background-position: -120px -80px
+}
+
+.pm_fox {
+    background-position: -140px -80px
+}
+
+.pm_ganon {
+    background-position: -160px -80px
+}
+
+.pm_gaw {
+    background-position: -180px -80px
+}
+
+.pm_ike {
+    background-position: -200px -80px
+}
+
+.pm_ivysaur {
+    background-position: -220px -80px
+}
+
+.pm_jigglypuff {
+    background-position: -240px -80px
+}
+
+.pm_kirby {
+    background-position: -260px -80px
+}
+
+.pm_link {
+    background-position: -280px -80px
+}
+
+.pm_lucario {
+    background-position: -300px -80px
+}
+
+.pm_lucas {
+    background-position: -320px -80px
+}
+
+.pm_luigi {
+    background-position: -340px -80px
+}
+
+.pm_mario {
+    background-position: -360px -80px
+}
+
+.pm_marth {
+    background-position: -380px -80px
+}
+
+.pm_mk {
+    background-position: -400px -80px
+}
+
+.pm_ness {
+    background-position: -420px -80px
+}
+
+.pm_olimar {
+    background-position: -440px -80px
+}
+
+.pm_peach {
+    background-position: -460px -80px
+}
+
+.pm_pikachu {
+    background-position: -480px -80px
+}
+
+.pm_pit {
+    background-position: -500px -80px
+}
+
+.pm_popo {
+    background-position: -520px -80px
+}
+
+.pm_rob {
+    background-position: -540px -80px
+}
+
+.pm_samus {
+    background-position: -560px -80px
+}
+
+.pm_sheik {
+    background-position: -580px -80px
+}
+
+.pm_snake {
+    background-position: -600px -80px
+}
+
+.pm_sonic {
+    background-position: -620px -80px
+}
+
+.pm_squirtle {
+    background-position: -640px -80px
+}
+
+.pm_toonlink {
+    background-position: -660px -80px
+}
+
+.pm_wario {
+    background-position: -680px -80px
+}
+
+.pm_wolf {
+    background-position: -700px -80px
+}
+
+.pm_yoshi {
+    background-position: -720px -80px
+}
+
+.pm_zelda {
+    background-position: -740px -80px
+}
+
+.pm_zss {
+    background-position: -760px -80px
+}
+
+.pm_roy {
+    background-position: -780px -80px
+}
+
+.pm_mewtwo {
+    background-position: -800px -80px
+}
+
+.pm_random {
+    background-position: -520px -20px
+}
+
+.s4_bowser {
+    background-position: 0px -100px
+}
+
+.s4_bowserjr {
+    background-position: -20px -100px
+}
+
+.s4_larry {
+    background-position: -840px -60px
+}
+
+.s4_roy {
+    background-position: -860px -60px
+}
+
+.s4_wendy {
+    background-position: -880px -60px
+}
+
+.s4_iggy {
+    background-position: -900px -60px
+}
+
+.s4_morton {
+    background-position: -920px -60px
+}
+
+.s4_lemmy {
+    background-position: -940px -60px
+}
+
+.s4_ludwig {
+    background-position: -960px -60px
+}
+
+.s4_falcon {
+    background-position: -40px -100px
+}
+
+.s4_charizard {
+    background-position: -60px -100px
+}
+
+.s4_darkpit {
+    background-position: -80px -100px
+}
+
+.s4_d3 {
+    background-position: -100px -100px
+}
+
+.s4_diddy {
+    background-position: -120px -100px
+}
+
+.s4_donkey {
+    background-position: -140px -100px
+}
+
+.s4_drmario {
+    background-position: -160px -100px
+}
+
+.s4_duckhunt {
+    background-position: -180px -100px
+}
+
+.s4_falco {
+    background-position: -200px -100px
+}
+
+.s4_fox {
+    background-position: -220px -100px
+}
+
+.s4_ganon {
+    background-position: -240px -100px
+}
+
+.s4_gnw {
+    background-position: -260px -100px
+}
+
+.s4_greninja {
+    background-position: -280px -100px
+}
+
+.s4_ike {
+    background-position: -300px -100px
+}
+
+.s4_jiggs {
+    background-position: -320px -100px
+}
+
+.s4_kirby {
+    background-position: -340px -100px
+}
+
+.s4_link {
+    background-position: -360px -100px
+}
+
+.s4_littlemac {
+    background-position: -380px -100px
+}
+
+.s4_wiremac {
+    background-position: -840px -80px
+}
+
+.s4_lucario {
+    background-position: -400px -100px
+}
+
+.s4_lucina {
+    background-position: -420px -100px
+}
+
+.s4_luigi {
+    background-position: -440px -100px
+}
+
+.s4_mario {
+    background-position: -460px -100px
+}
+
+.s4_marth {
+    background-position: -480px -100px
+}
+
+.s4_megaman {
+    background-position: -500px -100px
+}
+
+.s4_metaknight {
+    background-position: -520px -100px
+}
+
+.s4_mii {
+    background-position: -540px -100px
+}
+
+.s4_miif {
+    background-position: -880px -80px
+}
+
+.s4_ness {
+    background-position: -560px -100px
+}
+
+.s4_olimar {
+    background-position: -580px -100px
+}
+
+.s4_alph {
+    background-position: -860px -80px
+}
+
+.s4_pacman {
+    background-position: -600px -100px
+}
+
+.s4_palutena {
+    background-position: -620px -100px
+}
+
+.s4_peach {
+    background-position: -640px -100px
+}
+
+.s4_pikachu {
+    background-position: -660px -100px
+}
+
+.s4_pit {
+    background-position: -680px -100px
+}
+
+.s4_rob {
+    background-position: -700px -100px
+}
+
+.s4_robinm {
+    background-position: -720px -100px
+}
+
+.s4_robinf {
+    background-position: -900px -80px
+}
+
+.s4_rosalina {
+    background-position: -740px -100px
+}
+
+.s4_samus {
+    background-position: -760px -100px
+}
+
+.s4_sheik {
+    background-position: -780px -100px
+}
+
+.s4_shulk {
+    background-position: -800px -100px
+}
+
+.s4_sonic {
+    background-position: -820px -100px
+}
+
+.s4_toonlink {
+    background-position: -840px -100px
+}
+
+.s4_villagerm {
+    background-position: -860px -100px
+}
+
+.s4_villagerf {
+    background-position: -920px -80px
+}
+
+.s4_wario {
+    background-position: -880px -100px
+}
+
+.s4_warioc {
+    background-position: -940px -80px
+}
+
+.s4_wiifitf {
+    background-position: -900px -100px
+}
+
+.s4_wiifitm {
+    background-position: -960px -80px
+}
+
+.s4_yoshi {
+    background-position: -920px -100px
+}
+
+.s4_zelda {
+    background-position: -940px -100px
+}
+
+.s4_zss {
+    background-position: -960px -100px
+}
+
+.s4_mewtwo {
+    background-position: -940px -40px
+}
+
+.s4_lucas {
+    background-position: -960px -40px
+}
+
+.s4_ryu {
+    background-position: -900px -40px
+}
+
+.s4_feroy {
+    background-position: -920px -40px
+}
+
+.s4_cloud {
+    background-position: -880px -40px
+}
+
+.s4_corrinm {
+    background-position: -860px -40px
+}
+
+.s4_corrinf {
+    background-position: -860px -20px
+}
+
+.s4_bayonetta {
+    background-position: -840px -40px
+}
+
+.s4_random {
+    background-position: -520px -20px
+}

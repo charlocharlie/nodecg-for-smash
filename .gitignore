@@ -1,2 +1,10 @@
 bower_components/
 *.TTF
+.idea/.name
+.idea/jsLibraryMappings.xml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/nodecg-for-smash.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/encodings.xml

@@ -10,8 +10,10 @@ $(function() {
 	function updateRosters(data) {
 		var rosterSize = 10;
 		for (var i = 0; i < rosterSize; i++) {
-			$('#rosterleft > div:nth-child(' + (i + 1) + ')').text(data.roster1[i]);
-			$('#rosterright > div:nth-child(' + (i + 1) + ')').text(data.roster2[i]);
+			$('#rosterleft > div:nth-child(' + (i + 1) + ') > #rosternameleft').text(data.roster1[i]);
+			$('#rosterright > div:nth-child(' + (i + 1) + ') > #rosternameright').text(data.roster2[i]);
+            $('#rosterleft > div:nth-child(' + (i + 1) + ') > #leftchar').attr('class', 'heads ' + data.chars1[i]);
+			$('#rosterright > div:nth-child(' + (i + 1) + ') > #rightchar').attr('class', 'heads ' + data.chars2[i]);
 			if(data.kos1[i]) {
 				$('#rosterleft > div:nth-child(' + (i + 1) + ')').css({
 					'color': '#888',
