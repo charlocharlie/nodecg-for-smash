@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="components/webcomponentsjs/webcomponents-lite.min.js"></script>
+	<script src="components/jquery/dist/jquery.min.js"></script>
+
+	<link rel="import" href="components/polymer/polymer.html">
+	<link rel="import" href="components/paper-input/paper-input.html">
+	<link rel="import" href="components/paper-listbox/paper-listbox.html">
+	<link rel="import" href="components/paper-menu/paper-menu.html">
+	<link rel="import" href="components/paper-item/paper-item.html">
+	<link rel="import" href="components/paper-button/paper-button.html">
+	<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">
+</head>
+<body>
+<style>
+paper-button.indigo {
+    background-color: #2D4E8A;
+    color: white;
+}
+</style>
+
+<dom-module name="game-dropdown" attributes="games">
+	<template>
+		<paper-dropdown-menu id="game-select" label="Currently active game" class="game-dropdown">
+			<paper-menu class="dropdown-content" id="game-select-menu" attr-for-selected="value" selected="{{selected}}">
+				<paper-item value="64">Smash 64</paper-item>
+				<paper-item value="melee">Melee</paper-item>
+				<paper-item value="pm">Project M/Brawl</paper-item>
+				<paper-item value="wiiu">Wii U</paper-item>
+			</paper-menu>
+		</paper-dropdown-menu>
+	</template>
+	<script>
+	window.addEventListener('WebComponentsReady', function(e) {
+		Polymer({
+			is: 'game-dropdown',
+			ready: function() {
+				this.selected = "melee";
+			},
+			getSelected: function() {
+				return this.selected;
+			},
+			setSelected: function(selected) {
+				this.selected = selected;
+			}
+		});
+	});
+	</script>
+</dom-module>
+<game-dropdown id="game-select"></game-dropdown>
+<script src="js/game-switcher.js"></script>
+</body>
+</html>
+
+
+
+
+<!--
+<form>
+	<div class="form-group">
+		<select class="form-control" id="game-select">
+			<option selected="selected" value="melee">Melee</option>
+			<option value="64">Smash 64</option>
+			<option value="pm">Project M/Brawl</option>
+			<option value="wiiu">Smash for Wii U</option>
+		</select>
+	</div>
+</form>
+<button type="button" class="smash-game-switcher-update btn btn-xs btn-primary" style="width: 100%">Update</button>
+-->
+

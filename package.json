@@ -72,6 +72,13 @@
 					}
 				],
 				"file": "manage-teams.html"
+			},
+            {
+				"name": "smash-game-switcher",
+				"title": "Smash Game Switcher",
+				"width": 2,
+				"headerColor": "#2d4e8a",
+				"file": "game-switcher.html"
 			}
 		],
 		"graphics": [
