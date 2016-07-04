@@ -1,13 +1,18 @@
 'use strict';
+var topvar = 16; //For animation on a game by game basis in this js file.
+var leftMessage = 8;
+var leftInfo = 104;
+var infoSpacing = 184;
 
 $(function () {
 	nodecg.listenFor('ssbmTopUpdate', updateText);
 	nodecg.listenFor('ssbmTopUpdateAnim', updatePanelsAnim);
 	nodecg.listenFor('ssbmTopMessage', showMessage);
+	nodecg.listenFor('smashLayoutUpdate',  updateLayout);
 
 	function updatePanelsAnim(data) {
-		$('.panel').animate({top: "-100%"}, {duration: 1000, complete: function () { updateText(data); }});
-		$('.panel').animate({top: "0%"}, {duration: 1000});
+		$('.panel').animate({top: -40 - 8 + "px"}, {duration: 500, complete: function () { updateText(data); }});
+		$('.panel').animate({top: topvar + "px"}, {duration: 1000});
 	}
 
 	function updateText(data) {
@@ -16,9 +21,9 @@ $(function () {
 	}
 
 	function showMessage(data) {
-		$('#panel1').animate({left: "-460px"}, {duration: 1000});
-		$('#panel2').animate({left: "1270px"}, {duration: 1000});
-		$('#message').animate({left: "0px", width: "1270px"}, {duration: 1000});
+		$('#panel1').animate({left: leftMessage - 240 - 8 + "px"}, {duration: 1000});
+		$('#panel2').animate({left: leftMessage + 2 * (leftInfo - leftMessage) + infoSpacing + 480 + 8 + "px"}, {duration: 1000});
+		$('#message').animate({left: leftMessage + "px", width: 2 * (leftInfo - leftMessage) + infoSpacing + 480 + "px"}, {duration: 1000});
 		setTimeout(function() {
 			$('#message-text').text(data);
 			$('#message-text').fadeIn(500);
@@ -28,24 +33,53 @@ $(function () {
 
 	function hideMessage(data) {
 		$('#message-text').fadeOut(500);
-		$('#message').animate({left: "645px", width: "0"}, {duration: 1000});
-		$('#panel1').animate({left: "165px"}, {duration: 1000});
-		$('#panel2').animate({left: "645px"}, {duration: 1000});
+		$('#message').animate({left: leftInfo + 240 + (infoSpacing/2) + "px", width: "0"}, {duration: 1000});
+		$('#panel1').animate({left: leftInfo + "px"}, {duration: 1000});
+		$('#panel2').animate({left: leftInfo + 240 + infoSpacing + "px"}, {duration: 1000});
 	}
 
-	var bgInfo = nodecg.Replicant('bgInfo', 'ssbm-bg-helper');
-
-	bgInfo.on('change', function(newValue, oldValue) {
-		if(oldValue) {
-			if(oldValue.image && newValue.image) return;
-			else if (newValue.image) {
-				$('.panel').css('background', 'none');
-				$('.panel').css('background-image', 'url("img/top info.png")');
-			} else {
-				$('.panel').css('background-image', 'none');
-				$('.panel').css('background', '#' + newValue.color);
-				$('.panel').css('border-radius', newValue.corner + 'px')
-			}
+	function updateLayout(data) {
+		if (data.game == '64') { //SMASH 64
+			topvar = nodecg.bundleConfig['top-info-topvar-64']; //need ['...'] bracket format due to hyphens in variable names
+			leftMessage = nodecg.bundleConfig['top-info-leftMessage-64'];
+			leftInfo = nodecg.bundleConfig['top-info-leftInfo-64'];
+			infoSpacing = nodecg.bundleConfig['top-info-infoSpacing-64'];
+			$('.panel').css({top: topvar + "px"});
+			$('#panel1').css({left: leftInfo + "px"});
+			$('#panel2').css({left: leftInfo + 240 + infoSpacing + "px"});
+			$('#message').css({left: leftInfo + 240 + (infoSpacing/2) + "px", top: topvar + "px"});
 		}
-	});
+		if (data.game == 'melee') { //MELEE
+			topvar = nodecg.bundleConfig['top-info-topvar-melee'];
+			leftMessage = nodecg.bundleConfig['top-info-leftMessage-melee'];
+			leftInfo = nodecg.bundleConfig['top-info-leftInfo-melee'];
+			infoSpacing = nodecg.bundleConfig['top-info-infoSpacing-melee'];
+			$('.panel').css({top: topvar + "px"});
+			$('#panel1').css({left: leftInfo + "px"});
+			$('#panel2').css({left: leftInfo + 240 + infoSpacing + "px"});
+			$('#message').css({left: leftInfo + 240 + (infoSpacing/2) + "px", top: topvar + "px"});
+		}
+		if (data.game == 'pm') { //PROJECT M/BRAWL
+			topvar = nodecg.bundleConfig['top-info-topvar-pm'];
+			leftMessage = nodecg.bundleConfig['top-info-leftMessage-pm'];
+			leftInfo = nodecg.bundleConfig['top-info-leftInfo-pm'];
+			infoSpacing = nodecg.bundleConfig['top-info-infoSpacing-pm'];
+			$('.panel').css({top: topvar + "px"});
+			$('#panel1').css({left: leftInfo + "px"});
+			$('#panel2').css({left: leftInfo + 240 + infoSpacing + "px"});
+			$('#message').css({left: leftInfo + 240 + (infoSpacing/2) + "px", top: topvar + "px"});
+		}
+		if (data.game == 'wiiu') { //SMASH FOR WII U
+			topvar = nodecg.bundleConfig['top-info-topvar-wiiu'];
+			leftMessage = nodecg.bundleConfig['top-info-leftMessage-wiiu'];
+			leftInfo = nodecg.bundleConfig['top-info-leftInfo-wiiu'];
+			infoSpacing = nodecg.bundleConfig['top-info-infoSpacing-wiiu'];
+			$('.panel').css({top: topvar + "px"});
+			$('#panel1').css({left: leftInfo + "px"});
+			$('#panel2').css({left: leftInfo + 240 + infoSpacing + "px"});
+			$('#message').css({left: leftInfo + 240 + (infoSpacing/2) + "px", top: topvar + "px"});
+		}
+
+	}
+
 })
