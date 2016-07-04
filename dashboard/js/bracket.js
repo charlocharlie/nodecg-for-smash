@@ -2,6 +2,8 @@
 	'use strict';
 	window.addEventListener('WebComponentsReady', function(e) {
 		var $update = $('.ssbm-bracket-get-challonge');
+		var $show = $('.ssbm-bracket-show');
+		var $hide = $('.ssbm-bracket-hide');
 
 		var bracketReplicant = nodecg.Replicant('bracket', {defaultValue: [], persistent: false});
 		var bracket = [];
@@ -15,6 +17,14 @@
 				bracketReplicant.value = result;
 				nodecg.sendMessage('ssbmBracketUpdate', updateData(bracket));
 			});
+		});
+
+		$show.click(function () {
+			nodecg.sendMessage('ssbmBracketShow');
+		});
+
+		$hide.click(function () {
+			nodecg.sendMessage('ssbmBracketHide');
 		});
 
 		function getChallonge() {

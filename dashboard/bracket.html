@@ -12,7 +12,14 @@
 	<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">
 </head>
 
+
 <body>
+<style>
+	paper-button.indigo {
+		background-color: #2D4E8A;
+		color: white;
+	}
+</style>
 <div class="horizontal layout">
 	<paper-input class="flex" id="ssbm-bracket-title" label="Bracket Title"></paper-input>
 </div>
@@ -22,6 +29,11 @@
 
 <div class="horizontal layout">
 	<paper-button raised class="ssbm-bracket-get-challonge flex">Pull from Challonge</paper-button>
+</div>
+</br>
+<div class="layout horizontal">
+	<paper-button raised class="indigo ssbm-bracket-show flex-auto">Show</paper-button>
+	<paper-button raised class="indigo ssbm-bracket-hide">Hide</paper-button>
 </div>
 <hr>
 <div class="horizontal layout">
