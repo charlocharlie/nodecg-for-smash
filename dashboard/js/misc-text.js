@@ -22,7 +22,7 @@
 		});
 
 		$playercamUpdate.click(function() {
-			nodecg.sendMessage('ssbmPlayercam', $('#ssbm-playercam-text').val());
+			nodecg.sendMessage('ssbmPlayercam', playercamData());
 		});
 
 		$lowerThirdUpdate.click(function() {
@@ -44,6 +44,13 @@
 			return {
 				'top': $('#ssbm-third-top-text').val(),
 				'bottom': $('#ssbm-third-bottom-text').val()
+			}
+		}
+
+		function playercamData() {
+			return {
+				'playercamLeft': $('#ssbm-playercam-left').val(),
+				'playercamRight': $('#ssbm-playercam-right').val()
 			}
 		}
 	});
