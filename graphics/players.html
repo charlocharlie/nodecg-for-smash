@@ -2,78 +2,56 @@
 <head>
 	<link href="css/players.css" rel="stylesheet"/>
 	<link href="img/flags/flags.css" rel="stylesheet"/>
-	<link href="img/heads/heads.css" rel="stylesheet"/>
 
 	<script src="components/jquery/dist/jquery.min.js"></script>
+	<script src="components/gsap/src/minified/jquery.gsap.min.js"></script>
+	<script src="components/gsap/src/minified/TweenLite.min.js"></script>
+	<script src="components/gsap/src/minified/plugins/CSSPlugin.min.js"></script>
 	<script src="js/players.js"></script>
 </head>
 <body>
-	<script type="text/javascript">
-		WebFontConfig = {
-			google: { families: [ 'Oxygen::latin' ] }
-		};
-		(function() {
-			var wf = document.createElement('script');
-			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-			wf.type = 'text/javascript';
-			wf.async = 'true';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(wf, s);
-		})(); 
-	</script>
+	<!--<script type="text/javascript">-->
+		<!--WebFontConfig = {-->
+			<!--google: { families: [ 'Oxygen::latin' ] }-->
+		<!--};-->
+		<!--(function() {-->
+			<!--var wf = document.createElement('script');-->
+			<!--wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +-->
+			<!--'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';-->
+			<!--wf.type = 'text/javascript';-->
+			<!--wf.async = 'true';-->
+			<!--var s = document.getElementsByTagName('script')[0];-->
+			<!--s.parentNode.insertBefore(wf, s);-->
+		<!--})();-->
+	<!--</script>-->
 	<div id="container">
-		<div id="teams">
-			<div id="team1" class="team">
-				<div id="team1name" class="teamname"></div>
-				<div id="team1score" class="teamscore"></div>
-			</div>
-			<div id="team2" class="team">
-				<div id="team2score" class="teamscore"></div>
-				<div id="team2name" class="teamname"></div>
-			</div>
-		</div>
-		<div id="space"></div>
-		<div id="fourplayers" class="players-container">
-			<div id="player1-4" class="fourplayer">
-				<div id="p1flag-4" class="flag flag-4player flag-xx"></div>
-				<div id="p1tag-4" class="tag-4"></div>
-				<img id="p1sponsor-4" class="sponsor sponsor4" height="64"></img>
-			</div>
-			<div id="player2-4" class="fourplayer">
-				<div id="p2flag-4" class="flag flag-4player flag-xx"></div>				
-				<div id="p2tag-4" class="tag-4"></div>
-				<img id="p2sponsor-4" class="sponsor sponsor4" height="64"></img>
-			</div>
-			<div id="player3-4" class="fourplayer">
-				<div id="p3flag-4" class="flag flag-4player flag-xx"></div>
-				<div id="p3tag-4" class="tag-4"></div>
-				<img id="p3sponsor-4" class="sponsor sponsor4" height="64"></img>
-			</div>
-			<div id="player4-4" class="fourplayer">
-				<div id="p4flag-4" class="flag flag-4player flag-xx"></div>
-				<div id="p4tag-4" class="tag-4"></div>
-				<img id="p4sponsor-4" class="sponsor sponsor4" height="64"></img>
-			</div>
-		</div>
-		<div id="twoplayers" class="players-container">
-			<div id="player1-2" class="twoplayer">
-				<div class="twoplayercontainer">
-					<div id="p1flag-2" class="flag flag-twoplayer flag-xx"></div>
-					<div id="p1char-2" class="head head-none"></div>
-					<div id="p1tag-2" class="tag-2"></div>
-					<img id="p1sponsor-2" class="sponsor" height="64"></img>
+		<div id="player1" class="player">
+			<div class="playercontainer">
+				<img id="p1char" class="head" style="display:none;">
+				<div id="p1tag" class="tag"></div>
+				<div id="p1flag" class="flag flag-xx"></div>
+				<img id="p3char" class="head" style="display:none;">
+				<div id="p1grands" class="grands" style="display:none;"></div>
+				<img id="p1sponsor" class="sponsor" height="56">
+				<img id="p3sponsor" class="sponsor" height="56">
+				<div id="scoreP1" class="scoreBox">
+					<div id="p1score" class="score"></div>
 				</div>
-				<div id="p1score-2" class="score"></div>
 			</div>
-			<div id="player2-2" class="twoplayer">
-				<div id="p2score-2" class="score"></div>
-				<div class="twoplayercontainer">
-					<img id="p2sponsor-2" class="sponsor" height="64"></img>
-					<div id="p2tag-2" class="tag-2"></div>
-					<div id="p2char-2" class="head head-none"></div>
-					<div id="p2flag-2" class="flag flag-twoplayer flag-xx"></div>
+
+		</div>
+		<div id="player2" class="player">
+			<div class="playercontainer">
+				<div id="scoreP2" class="scoreBox">
+					<div id="p2score" class="score"></div>
 				</div>
+				<img id="p2sponsor" class="sponsor" height="56">
+				<img id="p4sponsor" class="sponsor" height="56">
+				<div id="p2grands" class="grands" style="display:none;"></div>
+				<img id="p2char" class="head" style="display:none;">
+				<div id="p2flag" class="flag flag-xx"></div>
+				<div id="p2tag" class="tag"></div>
+				<img id="p4char" class="head" style="display:none;">
 			</div>
 		</div>
 	</div>

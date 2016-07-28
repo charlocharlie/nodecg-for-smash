@@ -2,23 +2,26 @@
 	<link href="css/bracket.css" rel="stylesheet"/>
 
 	<script src="components/jquery/dist/jquery.min.js"></script>
+	<script src="components/gsap/src/minified/jquery.gsap.min.js"></script>
+	<script src="components/gsap/src/minified/TweenLite.min.js"></script>
+	<script src="components/gsap/src/minified/plugins/CSSPlugin.min.js"></script>
 	<script src="js/bracket.js"></script>
 </head>
 <body class="body">
-	<script type="text/javascript">
-		WebFontConfig = {
-			google: { families: [ 'Oxygen::latin' ] }
-		};
-		(function() {
-			var wf = document.createElement('script');
-			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-			wf.type = 'text/javascript';
-			wf.async = 'true';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(wf, s);
-		})();
-	</script>
+	<!--<script type="text/javascript">-->
+		<!--WebFontConfig = {-->
+			<!--google: { families: [ 'Oxygen::latin' ] }-->
+		<!--};-->
+		<!--(function() {-->
+			<!--var wf = document.createElement('script');-->
+			<!--wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +-->
+			<!--'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';-->
+			<!--wf.type = 'text/javascript';-->
+			<!--wf.async = 'true';-->
+			<!--var s = document.getElementsByTagName('script')[0];-->
+			<!--s.parentNode.insertBefore(wf, s);-->
+		<!--})();-->
+	<!--</script>-->
 	<div class="container">
 		<div id="info">
 			<div id="bracket-name"></div>

@@ -1,10 +1,10 @@
 {
 	"name": "nodecg-for-smash",
-	"version": "0.3.0",
-	"description": "NodeCG bundle for SSBM streams",
+	"version": "0.4.0",
+	"description": "NodeCG bundle for Smash Bros streams",
 	"hompeage": "https://github.com/mparkms/nodecg-for-smash",
 	"license": "MIT",
-	"author": "Mike Park <mikeparkms@gmail.com> (www.mikeparkms.com)",
+	"author": "Mike Park <mikeparkms@gmail.com> (www.mikeparkms.com), Charlie Laabs <charlielaabs@gmail.com>",
 	"dependencies": {
 		"obs-remote": "^1.0.1"
 	},
@@ -15,28 +15,28 @@
 				"name": "ssbm-players",
 				"title": "Players & Score",
 				"width": 4,
-				"headerColor": "#2d4e8a",
+				"headerColor": "#283593",
 				"file": "players.html"
 			},
 			{
 				"name": "ssbm-bracket",
 				"title": "Bracket",
 				"width": 2,
-				"headerColor": "#2d4e8a",
+				"headerColor": "#283593",
 				"file": "bracket.html"
 			},
 			{
 				"name": "ssbm-crew-roster",
 				"title": "Crew Battle Rosters",
 				"width": 4,
-				"headerColor": "#2d4e8a",
+				"headerColor": "#283593",
 				"file": "crew-roster.html"
 			},
 			{
 				"name": "ssbm-misc-text",
 				"title": "Top Info, Playercam, Lower Third",
 				"width": 4,
-				"headerColor": "#2d4e8a",
+				"headerColor": "#283593",
 				"file": "misc-text.html"
 			},
 			{
@@ -50,7 +50,7 @@
 						"type": "confirm"
 					},
 					{
-						"name": "done",
+						"name": "cancel",
 						"type": "dismiss"
 					}
 				],
@@ -67,7 +67,7 @@
 						"type": "confirm"
 					},
 					{
-						"name": "done",
+						"name": "cancel",
 						"type": "dismiss"
 					}
 				],
@@ -77,7 +77,7 @@
 				"name": "smash-game-switcher",
 				"title": "Smash Game Switcher",
 				"width": 2,
-				"headerColor": "#2d4e8a",
+				"headerColor": "#283593",
 				"file": "game-switcher.html"
 			}
 		],

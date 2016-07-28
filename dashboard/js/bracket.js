@@ -1,57 +1,57 @@
-(function() {
-	'use strict';
-	window.addEventListener('WebComponentsReady', function(e) {
-		var $update = $('.ssbm-bracket-get-challonge');
-		var $show = $('.ssbm-bracket-show');
-		var $hide = $('.ssbm-bracket-hide');
+( function() {
+"use strict";
+window.addEventListener( "WebComponentsReady", function( e ) {
+	var $update = $( ".ssbm-bracket-get-challonge" );
+	var $show = $( ".ssbm-bracket-show" );
+	var $hide = $( ".ssbm-bracket-hide" );
 
-		var bracketReplicant = nodecg.Replicant('bracket', {defaultValue: [], persistent: false});
-		var bracket = [];
+	var bracketReplicant = nodecg.Replicant( "bracket", { defaultValue: [], persistent: false } );
+	var bracket = [];
 
-		bracketReplicant.on('change', function(newValue, oldValue) {
-			bracket = newValue;
-		});
+	bracketReplicant.on( "change", function( newValue, oldValue ) {
+		bracket = newValue;
+	} );
 
-		$update.click(function () {
-			nodecg.sendMessage('ssbmChallongeUpdate', getChallonge(), function(result) {
-				bracketReplicant.value = result;
-				nodecg.sendMessage('ssbmBracketUpdate', updateData(bracket));
-			});
-		});
+	$update.click( function() {
+		nodecg.sendMessage( "ssbmChallongeUpdate", getChallonge(), function( result ) {
+			bracketReplicant.value = result;
+			nodecg.sendMessage( "ssbmBracketUpdate", updateData( bracket ) );
+		} );
+	} );
 
-		$show.click(function () {
-			nodecg.sendMessage('ssbmBracketShow');
-		});
+	$show.click( function() {
+		nodecg.sendMessage( "ssbmBracketShow" );
+	} );
 
-		$hide.click(function () {
-			nodecg.sendMessage('ssbmBracketHide');
-		});
+	$hide.click( function() {
+		nodecg.sendMessage( "ssbmBracketHide" );
+	} );
 
-		function getChallonge() {
-			var link = $('#ssbm-bracket-link').val();
-			var parser = document.createElement('a');
-			parser.href = link;
+	function getChallonge() {
+		var link = $( "#ssbm-bracket-link" ).val();
+		var parser = document.createElement( "a" );
+		parser.href = link;
 
-			var subdomain = '';
-			var hostnameSplit = parser.hostname.split('.');
-			if(hostnameSplit.length == 3) {
-				subdomain = hostnameSplit[0];
-			}
-
-			var path = parser.pathname.split('/')[1];
-
-			return {
-				'subdomain': subdomain,
-				'path': path,
-			}
+		var subdomain = "";
+		var hostnameSplit = parser.hostname.split( "." );
+		if ( hostnameSplit.length == 3 ) {
+			subdomain = hostnameSplit[ 0 ];
 		}
 
-		function updateData(bracket) {
-			return {
-				'bracket': bracket,
-				'link': $('#ssbm-bracket-link').val(),
-				'title': $('#ssbm-bracket-title').val()
-			}
-		}
-	});
-})();
+		var path = parser.pathname.split( "/" )[ 1 ];
+
+		return {
+			"subdomain": subdomain,
+			"path": path
+		};
+	}
+
+	function updateData( bracket ) {
+		return {
+			"bracket": bracket,
+			"link": $( "#ssbm-bracket-link" ).val(),
+			"title": $( "#ssbm-bracket-title" ).val()
+		};
+	}
+} );
+} )();

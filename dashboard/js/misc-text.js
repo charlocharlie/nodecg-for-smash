@@ -1,57 +1,57 @@
-(function() {
-	'use strict';
+( function() {
+	"use strict";
 
-	window.addEventListener('WebComponentsReady', function(e) {
-		var $topUpdate = $('.ssbm-top-update');
-		var $topUpdateAnim = $('.ssbm-top-update-anim');
-		var $sendTopMessage = $('.ssbm-top-message');
-		var $playercamUpdate = $('.ssbm-playercam-update');
-		var $lowerThirdUpdate = $('.ssbm-third-update');
-		var $lowerThirdUpdateAnim = $('.ssbm-third-update-anim');
+	window.addEventListener( "WebComponentsReady", function( e ) {
+		var $topUpdate = $( ".ssbm-top-update" );
+		var $topUpdateAnim = $( ".ssbm-top-update-anim" );
+		var $sendTopMessage = $( ".ssbm-top-message" );
+		var $playercamUpdate = $( ".ssbm-playercam-update" );
+		var $lowerThirdUpdate = $( ".ssbm-third-update" );
+		var $lowerThirdUpdateAnim = $( ".ssbm-third-update-anim" );
 
-		$topUpdate.click(function() {
-			nodecg.sendMessage('ssbmTopUpdate', topPanelData(false));
-		});
+		$topUpdate.click( function() {
+			nodecg.sendMessage( "ssbmTopUpdate", topPanelData( false ) );
+		} );
 
-		$topUpdateAnim.click(function() {
-			nodecg.sendMessage('ssbmTopUpdateAnim', topPanelData(true));
-		});
+		$topUpdateAnim.click( function() {
+			nodecg.sendMessage( "ssbmTopUpdateAnim", topPanelData( true ) );
+		} );
 
-		$sendTopMessage.click(function() {
-			nodecg.sendMessage('ssbmTopMessage', $('#ssbm-message-text').val());
-		});
+		$sendTopMessage.click( function() {
+			nodecg.sendMessage( "ssbmTopMessage", $( "#ssbm-message-text" ).val() );
+		} );
 
-		$playercamUpdate.click(function() {
-			nodecg.sendMessage('ssbmPlayercam', playercamData());
-		});
+		$playercamUpdate.click( function() {
+			nodecg.sendMessage( "ssbmPlayercam", playercamData() );
+		} );
 
-		$lowerThirdUpdate.click(function() {
-			nodecg.sendMessage('lowerThirdUpdate', lowerThirdData());
-		});
+		$lowerThirdUpdate.click( function() {
+			nodecg.sendMessage( "lowerThirdUpdate", lowerThirdData() );
+		} );
 
-		$lowerThirdUpdateAnim.click(function() {
-			nodecg.sendMessage('lowerThirdUpdateAnim', lowerThirdData());
-		});
+		$lowerThirdUpdateAnim.click( function() {
+			nodecg.sendMessage( "lowerThirdUpdateAnim", lowerThirdData() );
+		} );
 
-		function topPanelData(anim) {
+		function topPanelData( anim ) {
 			return {
-				'panel1text': $('#ssbm-top-panel1text').val(),
-				'panel2text': $('#ssbm-top-panel2text').val()
+				"panel1text": $( "#ssbm-top-panel1text" ).val(),
+				"panel2text": $( "#ssbm-top-panel2text" ).val()
 			};
 		}
 
 		function lowerThirdData() {
 			return {
-				'top': $('#ssbm-third-top-text').val(),
-				'bottom': $('#ssbm-third-bottom-text').val()
-			}
+				"top": $( "#ssbm-third-top-text" ).val(),
+				"bottom": $( "#ssbm-third-bottom-text" ).val()
+			};
 		}
 
 		function playercamData() {
 			return {
-				'playercamLeft': $('#ssbm-playercam-left').val(),
-				'playercamRight': $('#ssbm-playercam-right').val()
-			}
+				"playercamLeft": $( "#ssbm-playercam-left" ).val(),
+				"playercamRight": $( "#ssbm-playercam-right" ).val()
+			};
 		}
-	});
-})();
+	} );
+} )();

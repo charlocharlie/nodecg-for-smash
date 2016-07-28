@@ -9,11 +9,14 @@
 	<link rel="import" href="components/paper-menu/paper-menu.html">
 	<link rel="import" href="components/paper-item/paper-item.html">
 	<link rel="import" href="components/paper-button/paper-button.html">
-	<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">
+	<!--<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">-->
+	<link rel="import" href="components/iron-flex-layout/iron-flex-layout-classes.html">
 </head>
 
 <body>
+<style is="custom-style" include="iron-flex iron-flex-factors"></style>
 <dom-module name="match-dropdown">
+	<style  include="iron-flex iron-flex-factors"></style>
 	<template>
 		<paper-dropdown-menu id="match-dropdown" on-iron-select="handleSelect" class="flex" label="Match">
 			<paper-menu class="dropdown-content" id="ssbm-bracket-roundmatch" attr-for-selected="value" selected="{{selected}}">
@@ -50,6 +53,7 @@
 	</script>
 </dom-module>
 <dom-module name="winner-dropdown">
+	<style  include="iron-flex iron-flex-factors"></style>
 	<template>
 		<paper-dropdown-menu class="flex" label="Winner">
 			<paper-menu class="dropdown-content" id="ssbm-bracket-winner" attr-for-selected="value" selected="{{selected}}">

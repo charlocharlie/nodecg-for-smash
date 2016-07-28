@@ -1,0 +1,101 @@
+{
+    "challongeKey": "abcdefghijklmnopqrstuvwxyz123456789",
+
+
+    "players-player-width-64": "328px",
+    "players-player-height-64": "32px",
+    "players-player-font-size-64": "20px",
+    "players-topvar-64": 12,
+    "players-player1-left-64": "16px",
+    "players-player2-left-64": "616px",
+    "players-tag-width-64": "288px",
+    "players-scoreBox-size-64": "28px",
+    "players-score-font-size-64": "24px",
+
+    "players-player-width-melee": "328px",
+    "players-player-height-melee": "32px",
+    "players-player-font-size-melee": "20px",
+    "players-topvar-melee": 8,
+    "players-player1-left-melee": "16px",
+    "players-player2-left-melee": "528px",
+    "players-tag-width-melee": "288px",
+    "players-scoreBox-size-melee": "28px",
+    "players-score-font-size-melee": "24px",
+
+    "players-player-width-pm": "328px",
+    "players-player-height-pm": "32px",
+    "players-player-font-size-pm": "20px",
+    "players-topvar-pm": 16,
+    "players-player1-left-pm": "16px",
+    "players-player2-left-pm": "528px",
+    "players-tag-width-pm": "288px",
+    "players-scoreBox-size-pm": "28px",
+    "players-score-font-size-pm": "24px",
+
+    "players-player-width-wiiu": "232px",
+    "players-player-height-wiiu": "24px",
+    "players-player-font-size-wiiu": "15px",
+    "players-topvar-wiiu": 32,
+    "players-player1-left-wiiu": "256px",
+    "players-player2-left-wiiu": "736px",
+    "players-tag-width-wiiu": "232px",
+    "players-scoreBox-size-wiiu": "20px",
+    "players-score-font-size-wiiu": "16px",
+
+
+    "top-info-topvar-64": 16,
+    "top-info-leftMessage-64": 8,
+    "top-info-leftInfo-64": 128,
+    "top-info-infoSpacing-64": 224,
+
+    "top-info-topvar-melee": 16,
+    "top-info-leftMessage-melee": 8,
+    "top-info-leftInfo-melee": 104,
+    "top-info-infoSpacing-melee": 184,
+
+    "top-info-topvar-pm": 16,
+    "top-info-leftMessage-pm": 0,
+    "top-info-leftInfo-pm": 104,
+    "top-info-infoSpacing-pm": 224,
+
+    "top-info-topvar-wiiu": 8,
+    "top-info-leftMessage-wiiu": 0,
+    "top-info-leftInfo-wiiu": 264,
+    "top-info-infoSpacing-wiiu": 272,
+
+    "playercam-rectangle-rectangle-left-64": "96px",
+    "playercam-rectangle-rectangle-width-64": "296px",
+    "playercam-rectangle-mic-left-64": "139px",
+    "playercam-rectangle-text-width-64": "135px",
+
+    "playercam-rectangle-rectangle-left-melee": "8px",
+    "playercam-rectangle-rectangle-width-melee": "384px",
+    "playercam-rectangle-mic-left-melee": "182px",
+    "playercam-rectangle-text-width-melee": "178px",
+
+    "playercam-rectangle-rectangle-left-pm": "56px",
+    "playercam-rectangle-rectangle-width-pm": "336px",
+    "playercam-rectangle-mic-left-pm": "159px",
+    "playercam-rectangle-text-width-pm": "155px",
+
+    "playercam-rectangle-rectangle-left-wiiu": "0px",
+    "playercam-rectangle-rectangle-width-wiiu": "0px",
+    "playercam-rectangle-mic-left-wiiu": "0px",
+    "playercam-rectangle-text-width-wiiu": "0px",
+
+    "crew-roster-halfWidth-64": 472,
+    "crew-roster-border-64": 8,
+    "crew-roster-leftEdge-64": 205,
+
+    "crew-roster-halfWidth-melee": 448,
+    "crew-roster-border-melee": 8,
+    "crew-roster-leftEdge-melee": 161,
+
+    "crew-roster-halfWidth-pm": 456,
+    "crew-roster-border-pm": 0,
+    "crew-roster-leftEdge-pm": 181,
+
+    "crew-roster-halfWidth-wiiu": 640,
+    "crew-roster-border-wiiu": 0,
+    "crew-roster-leftEdge-wiiu": 365
+}

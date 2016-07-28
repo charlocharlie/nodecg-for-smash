@@ -11,11 +11,14 @@
 	<link rel="import" href="components/paper-item/paper-icon-item.html">
 	<link rel="import" href="components/paper-listbox/paper-listbox.html">
 	<link rel="import" href="components/paper-button/paper-button.html">
-	<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">
+	<!--<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">-->
+	<link rel="import" href="components/iron-flex-layout/iron-flex-layout-classes.html">
 </head>
 
 <body>
+<style is="custom-style" include="iron-flex iron-flex-factors"></style>
 <dom-module name="teams-list">
+	<style  include="iron-flex iron-flex-factors"></style>
 	<template>
 		<div role="listbox" class="flex" style="width:100%">
 			<template is="dom-repeat" items="{{teams}}">
@@ -50,7 +53,7 @@
 				this.set('teams.' + index + '.name', name);
 			}
 		});
-	});	
+	});
 	</script>
 </dom-module>
 

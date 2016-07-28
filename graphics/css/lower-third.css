@@ -32,7 +32,7 @@ body {
 }
 
 #logo {
-	margin-left: 8px;
+	margin-left: 12px;
 	margin-top: 11px;
 	width: 128px;
 	height: 128px;
@@ -67,21 +67,7 @@ body {
 	box-shadow: 3px 3px 20px 1px #333;*/
 	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
 	position: absolute;
-	animation-name: loadAnim;
-	animation-iteration-count: 1;
-	animation-timing-function: ease;
-	animation-duration: 1s;
-
-	font-family: FranklinDemi, helvetica, arial;
-}
-
-@keyframes loadAnim {
-	0% {
-		transform: translateX(-1650px);
-	}
-	100% {
-		transform: translateY(0);
-	}
+		font-family: FranklinDemi, helvetica, arial;
 }
 
 #lowerthirdtoptext {

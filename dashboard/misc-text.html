@@ -10,13 +10,14 @@
 	<link rel="import" href="components/paper-menu/paper-menu.html">
 	<link rel="import" href="components/paper-item/paper-item.html">
 	<link rel="import" href="components/paper-button/paper-button.html">
-	<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">
+	<!--<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">-->
+	<link rel="import" href="components/iron-flex-layout/iron-flex-layout-classes.html">
 </head>
 
 <body>
-<style>
+<style is="custom-style" include="iron-flex iron-flex-factors">
 paper-button.indigo {
-    background-color: #2D4E8A;
+    background-color: #283593;
     color: white;
 }
 </style>
@@ -41,12 +42,8 @@ paper-button.indigo {
 			<paper-button raised class="indigo ssbm-third-update">Update</paper-button>
 			<paper-button raised class="indigo ssbm-third-update-anim flex-auto">w/ Animation</paper-button>
 		</div>
-		<div class="layout horizontal">
 			<paper-input type="text" label="Playercam Left" id="ssbm-playercam-left"></paper-input>
-		</div>
-		<div class="layout horizontal">
 			<paper-input type="text" label="Playercam Right" id="ssbm-playercam-right"></paper-input>
-		</div>
 		<div class="layout horizontal">
 			<paper-button raised class="indigo ssbm-playercam-update flex">Update playercam</paper-button>
 		</div>

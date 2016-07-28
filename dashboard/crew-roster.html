@@ -7,17 +7,19 @@
 	<link rel="import" href="components/paper-input/paper-input.html">
 	<link rel="import" href="components/paper-checkbox/paper-checkbox.html">
 	<link rel="import" href="components/paper-button/paper-button.html">
-	<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">
+	<!--<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">-->
+	<link rel="import" href="components/iron-flex-layout/iron-flex-layout-classes.html">
 </head>
 <body>
-<style>
+<style is="custom-style" include="iron-flex iron-flex-factors">
 paper-button.indigo {
-    background-color: #2D4E8A;
+    background-color: #283593;
     color: white;
 }
 </style>
 
 <dom-module name="crew-score" attributes="number">
+	<style  include="iron-flex iron-flex-factors"></style>
 	<template>
 		<div class="flex">
 			<div class="horizontal layout">
@@ -45,6 +47,7 @@ paper-button.indigo {
 </dom-module>
 
 <dom-module name="crew-member" attribute="number">
+	<style  include="iron-flex iron-flex-factors"></style>
 	<template>
 		<div class="flex">
 			<div class="horizontal layout">

@@ -5,7 +5,10 @@
 	<script src="components/jquery/dist/jquery.min.js"></script>
 	<script src="js/countrycodes.js"></script>
 	<script src="js/characters.js"></script>
+	<script src="components/mootools/dist/mootools-core.min.js"></script>
+	<script src="js/FancySelect.js"></script>
 
+	<link href="css/FancySelect.css" rel="stylesheet">
 	<link href="css/players.css" rel="stylesheet">
 
 	<link rel="import" href="components/polymer/polymer.html">
@@ -14,11 +17,34 @@
 	<link rel="import" href="components/paper-menu/paper-menu.html">
 	<link rel="import" href="components/paper-item/paper-item.html">
 	<link rel="import" href="components/paper-button/paper-button.html">
-	<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">
+	<link rel="import" href="components/paper-toggle-button/paper-toggle-button.html">
+	<link rel="import" href="components/paper-card/paper-card.html">
+	<!--<link rel="import" href="components/iron-flex-layout/classes/iron-flex-layout.html">-->
+	<link rel="import" href="components/iron-flex-layout/iron-flex-layout-classes.html">
+	<!--<link rel="import" href="components/iron-flex-layout/iron-flex-layout.html">-->
+	<link rel="import" href="components/iron-icons/iron-icons.html">
+	<link rel="import" href="components/nodecg-toggle/nodecg-toggle.html">
+
 </head>
 
 <body>
-<datalist id="characters">
+<datalist id="64-characters">
+	<option value="None">
+	<option value="Pikachu">
+	<option value="Kirby">
+	<option value="Captain Falcon">
+	<option value="Fox">
+	<option value="Yoshi">
+	<option value="Jigglypuff">
+	<option value="Mario">
+	<option value="Samus">
+	<option value="Donkey Kong">
+	<option value="Ness">
+	<option value="Link">
+	<option value="Luigi">
+</datalist>
+
+<datalist id="melee-characters">
 	<option value="None">
 	<option value="Fox">
 	<option value="Falco">
@@ -48,6 +74,117 @@
 	<option value="Kirby">
 </datalist>
 
+<!-- http://pmunderground.net/index.php/articles/9-articles/45-introducing-the-new-pmbr-and-pm-tier-list-2 -->
+<datalist id="pm-characters">
+	<option value="None">
+	<option value="Diddy Kong">
+	<option value="Meta Knight">
+	<option value="Fox">
+	<option value="Wolf">
+	<option value="Mr. Game &amp; Watch">
+	<option value="Sheik">
+	<option value="Captain Falcon">
+	<option value="Wario">
+	<option value="Zero Suit Samus">
+	<option value="Mewtwo">
+	<option value="Snake">
+	<option value="R.O.B.">
+	<option value="Marth">
+	<option value="Lucas">
+	<option value="Lucario">
+	<option value="Falco">
+	<option value="Peach">
+	<option value="Toon Link">
+	<option value="Ness">
+	<option value="Sonic">
+	<option value="Ike">
+	<option value="Roy">
+	<option value="Samus">
+	<option value="Mario">
+	<option value="Donkey Kong">
+	<option value="Luigi">
+	<option value="Pikachu">
+	<option value="Ice Climbers">
+	<option value="Ivysaur">
+	<option value="Squirtle">
+	<option value="Link">
+	<option value="Charizard">
+	<option value="Jigglypuff">
+	<option value="Zelda">
+	<option value="Ganondorf">
+	<option value="King Dedede">
+	<option value="Olimar">
+	<option value="Yoshi">
+	<option value="Pit">
+	<option value="Kirby">
+	<option value="Bowser">
+	<option value="Pokemon Trainer">
+</datalist>
+
+<!-- http://smashboards.com/threads/first-official-4br-smash-for-wii-u-tier-list.429817/ -->
+<!-- Very outdated, I just threw Bayonetta and Corrin in there kind of high -->
+<datalist id="wiiu-characters">
+	<option value="None">
+	<option value="Sheik">
+	<option value="Zero Suit Samus">
+	<option value="Rosalina &amp; Luma">
+	<option value="Ryu">
+	<option value="Pikachu">
+	<option value="Sonic">
+	<option value="Fox">
+	<option value="Mario">
+	<option value="Diddy Kong">
+	<option value="Meta Knight">
+	<option value="Bayonetta">
+	<option value="Corrin">
+	<option value="Villager">
+	<option value="Cloud">
+	<option value="Ness">
+	<option value="Captain Falcon">
+	<option value="Yoshi">
+	<option value="Luigi">
+	<option value="Dark Pit">
+	<option value="Pit">
+	<option value="Peach">
+	<option value="R.O.B.">
+	<option value="Wario">
+	<option value="Toon Link">
+	<option value="Lucario">
+	<option value="Olimar">
+	<option value="Greninja">
+	<option value="Ike">
+	<option value="Donkey Kong">
+	<option value="Mega Man">
+	<option value="Pac-Man">
+	<option value="Bowser">
+	<option value="Robin">
+	<option value="Roy">
+	<option value="Kirby">
+	<option value="Bowser Jr.">
+	<option value="Mr. Game &amp; Watch">
+	<option value="Lucas">
+	<option value="Mewtwo">
+	<option value="Falco">
+	<option value="Wii Fit Trainer">
+	<option value="Shulk">
+	<option value="Marth">
+	<option value="Link">
+	<option value="Duck Hunt">
+	<option value="Little Mac">
+	<option value="Dr. Mario">
+	<option value="King Dedede">
+	<option value="Lucina">
+	<option value="Mii Brawler">
+	<option value="Charizard">
+	<option value="Palutena">
+	<option value="Samus">
+	<option value="Mii Gunner">
+	<option value="Mii Swordfighter">
+	<option value="Ganondorf">
+	<option value="Jigglypuff">
+	<option value="Zelda">
+
+</datalist>
 
 <datalist id="countries">
 <option value="None">
@@ -303,83 +440,92 @@
 
 <datalist id="players"></datalist>
 
-<style>
+<style is="custom-style" include="iron-flex iron-flex-factors">
 paper-button.indigo {
-    background-color: #2D4E8A;
+    background-color: #283593;
     color: white;
+}
+paper-button.red {
+	background-color: #C62828;
+	color: white;
+}
+paper-button.grey {
+	background-color: #757575;
+	color: white;
 }
 </style>
 
+
+
 <dom-module name="teams-score" attributes="number">
+	<style is="custom-style" include="iron-flex iron-flex-factors">
+		paper-card {
+			--paper-card-header-text: {
+				text-align: center;
+				font-size: 20px;
+				padding: 8px 8px 0 8px;
+			}
+		}
+		paper-button {
+			--paper-button: {
+				background-color: #757575;
+				color: white;
+			}
+		}
+	</style>
 	<template>
-		<div class="flex" style="padding-right: 5px">
+		<paper-card class="flex" elevation=1 style="padding-right: 5px; padding-left:5px;" heading="Team {{number}}">
 			<div class="horizontal layout">
-				<paper-dropdown-menu id="ssbm-team{{number}}" style="width:100%;padding-right:5px" label="Team {{number}}" class="team-dropdown flex-2">
-					<paper-menu class="dropdown-content" selected="{{team}}" attr-for-selected="value">
-						<paper-item value="Red">Red</paper-item>
-						<paper-item value="Green">Green</paper-item>
-						<paper-item value="Blue">Blue</paper-item>
-					</paper-menu>
-				</paper-dropdown-menu>
-				<div class="flex" style="padding-left:2px">
-					<paper-input id="ssbm-team{{number}}Score" type="number" value="{{score}}" label="Team {{number}} Score"></paper-input>
+				<div class="flex-4" style="padding-right:6px; padding-top:10px;">
+					<paper-button raised style="width: 100%" id="ssbm-team{{number}}Swap" >Swap</paper-button>
+				</div>
+				<div class="flex-2" style="padding-right:2px; padding-left:2px;">
+					<paper-dropdown-menu id="ssbm-team{{number}}Grands" label="GF W/L" always-float-label>
+						<paper-menu class="dropdown-content" class="dropdown-content" attr-for-selected="value" selected="{{grands}}">
+							<paper-item value="none"></paper-item>
+							<paper-item value="winners">W</paper-item>
+							<paper-item value="losers">L</paper-item>
+						</paper-menu>
+					</paper-dropdown-menu>
+				</div>
+				<div class="flex" style="padding-left:2px; padding-right:6px;">
+					<paper-input id="ssbm-team{{number}}Score" type="number" value="{{score}}" label="Score"></paper-input>
 				</div>
 			</div>
-		</div>
+		</paper-card>
 	</template>
 	<script>
 	window.addEventListener('WebComponentsReady', function(e) {
 		Polymer({
 			is: 'teams-score',
 			ready: function() {
-				this.team = "Red";
 				this.score = 0;
-			},
-			getTeam: function() {
-				return this.team;
+				this.grands = 'none';
 			},
 			getScore: function() {
 				return this.score;
+			},
+			setScore: function(score) {
+				this.score = score;
+			},
+			getGrands: function() {
+				return this.grands;
+			},
+			setGrands: function(grands) {
+				this.grands = grands;
 			}
 		})
 	});
 	</script>
 </dom-module>
 
-<dom-module name="team-dropdown" attributes="player">
-	<template>
-		<paper-dropdown-menu id="ssbm-p{{player}}Team" label="Player {{player}} Team" class="team-dropdown">
-			<paper-menu class="dropdown-content" id="p{{player}}Team-menu" attr-for-selected="value" selected="{{selected}}">
-				<paper-item value="Red">Red</paper-item>
-				<paper-item value="Green">Green</paper-item>
-				<paper-item value="Blue">Blue</paper-item>
-			</paper-menu>
-		</paper-dropdown-menu>
-	</template>
-	<script>
-	window.addEventListener('WebComponentsReady', function(e) {
-		Polymer({
-			is: 'team-dropdown',
-			ready: function() {
-				this.selected = "Red";
-			},
-			getSelected: function() {
-				return this.selected;
-			},
-			setSelected: function(selected) {
-				this.selected = selected;
-			}
-		});
-	});
-	</script>
-</dom-module>
-
 <dom-module name="player-info" attributes="player">
+	<style include="iron-flex iron-flex-factors"></style>
 	<template>
-		<div class="flex" style="padding-right: 5px">
+		<paper-card class="flex" elevation=1 style="padding-right: 5px; padding-left:5px;">
 			<div class="horizontal layout">
 				<div class="flex-2" style="padding-right:2px">
-					<paper-dropdown-menu id="ssbm-p{{player}}Sponsor" label="Sponsor">
+					<paper-dropdown-menu id="ssbm-p{{player}}Sponsor" label="Sponsor" always-float-label>
 						<paper-menu class="dropdown-content" class="dropdown-content" attr-for-selected="value" selected="{{sponsor}}">
 							<paper-item value="none"></paper-item>
 							<template is="dom-repeat" items="{{teams}}">
@@ -389,25 +535,52 @@ paper-button.indigo {
 					</paper-dropdown-menu>
 				</div>
 				<div class="flex-4" style="padding-left:2px;padding-right:2px">
-					<paper-input class="player-tags" id="ssbm-p{{player}}Tag" label="Player {{player}} Tag" list="players" autocomplete="on" value="{{tag}}"></paper-input>
+					<paper-input class="player-tags" id="ssbm-p{{player}}Tag" label="Player {{player}} Tag" list="players" autocomplete="on" value="{{tag}}" always-float-label on-input="tagInputHandler"></paper-input>
 				</div>
-				<div class="flex" style="padding-left:2px">
-					<paper-input class="player-score" id="ssbm-p{{player}}Score" type="number" label="Score" value="{{score}}"></paper-input>
+				<div class="flex" style="padding-left:2px;padding-right:2px">
+					<paper-input class="player-score" id="ssbm-p{{player}}Score" type="number" label="Score" value="{{score}}" always-float-label></paper-input>
 				</div>
 			</div>
-			<team-dropdown player="1" id="team-dropdown{{player}}"></team-dropdown>
-			<paper-input id="ssbm-p{{player}}Char" label="Player {{player}} Character" list="characters" autocomplete="on" class="character-select" value="{{character}}"></paper-input>
-			<paper-input id="ssbm-p{{player}}Flag" label="Player {{player}} Country" list="countries" autocomplete="on" value="{{flag}}"></paper-input>
-		</div>
+			<div class="horizontal layout">
+				<div class="flex-7" style="padding-right:2px">
+					<paper-input id="ssbm-p{{player}}Char" label="Player {{player}} Character" list="melee-characters" autocomplete="on" size="59" class="character-select" value="{{character}}" always-float-label on-input="changeHandler"></paper-input>
+				</div>
+				<div class="flex-2" style="padding-left:2px; padding-right:2px; padding-top:28px">
+					<select name="char-costume-p{{player}}" id="char-costume-p{{player}}">
+						<option value="1"></option>
+					</select>
+				</div>
+				<div class="flex-2" style="padding-left:2px;">
+					<paper-dropdown-menu id="ssbm-p{{player}}Grands" label="GF W/L" always-float-label class="grands-select-2p">
+						<paper-menu class="dropdown-content" class="dropdown-content" attr-for-selected="value" selected="{{grands}}">
+							<paper-item value="none"></paper-item>
+							<paper-item value="winners">W</paper-item>
+							<paper-item value="losers">L</paper-item>
+						</paper-menu>
+					</paper-dropdown-menu>
+				</div>
+			</div>
+			<paper-input id="ssbm-p{{player}}Flag" label="Player {{player}} Country" list="countries" autocomplete="on" value="{{flag}}" always-float-label></paper-input>
+		</paper-card>
 	</template>
 	<script>
 	window.addEventListener('WebComponentsReady', function(e) {
 		Polymer({
 			is: 'player-info',
+			properties: {
+				player: String
+			},
 			ready: function() {
 				this.score = 0;
 				this.teams = [];
 				this.sponsor = "none";
+				this.grands = "none";
+				document.querySelector("#char-costume-p" + this.player ).fancySelect({
+					showText: false,
+					showImages: true,
+					className: 'fancy-select',
+					autoHide: true
+				});
 			},
 			getTag: function() {
 				return this.tag;
@@ -444,68 +617,65 @@ paper-button.indigo {
 			},
 			setSponsor: function(sponsor) {
 				this.sponsor = sponsor;
-			}
-		});
-	});
-	</script>
-</dom-module>
-
-<dom-module name="swap-dropdown">
-	<template>
-		<div class="flex">
-			<paper-dropdown-menu class="swaps" style="width:100%">
-				<paper-menu class="dropdown-content" attr-for-selected="value" selected="{{selected}}">
-					<paper-item value="1">Player 1</paper-item>
-					<paper-item value="2">Player 2</paper-item>
-					<paper-item value="3">Player 3</paper-item>
-					<paper-item value="4">Player 4</paper-item>
-				</paper-menu>
-			</paper-dropdown-menu>
-		</div>
-	</template>
-	<script>
-	window.addEventListener('WebComponentsReady', function(e) {
-		Polymer({
-			is: 'swap-dropdown',
-			ready: function() {
-				this.selected = 1;
 			},
-			getSelected: function() {
-				return this.selected;
+			getGrands: function() {
+				return this.grands;
+			},
+			setGrands: function(grands) {
+				this.grands = grands;
+			},
+			changeHandler: function() {
+				var costumeRep = nodecg.Replicant('costumeRep', {defaultValue: [] });
+				costumeRep.value[this.player - 1] = this.character;
+			},
+			tagInputHandler: function() {
+				var tagInputRep = nodecg.Replicant('tagInputRep', {defaultValue: [] });
+				tagInputRep.value[this.player - 1] = this.tag;
+			},
+			getCostume: function() {
+				return document.getElementById("char-costume-p" + this.player ).value;
+			},
+			setCostume: function(costumeNum) {
+				var costume = document.getElementById("char-costume-p" + this.player);
+				var fancy = costume.get('fancySelect');
+				fancy.select(costumeNum);
 			}
 		});
 	});
+
 	</script>
 </dom-module>
 
-<div class="layout horizontal">
-	<paper-button raised class="flex" id="ssbm-players-toggle" style="width: 100%">Toggle 2/4 players</paper-button>
+<div class="layout horizontal center">
+	<nodecg-toggle replicant-name="twoPlayerValue" class="flex" id="ssbm-players-toggle" >Singles Mode</nodecg-toggle>
 	<paper-button raised class="flex" id="manage-team-icons" nodecg-dialog="manage-teams">Manage Sponsor Icons</paper-button>
 </div>
+</br>
 <div class="layout horizontal teams" style="display:none">
-	<teams-score number="1" id="team1"></teams-score>
-	<teams-score number="2" id="team2"></teams-score>
+	<teams-score number="1" id="team1" class="flex" style="padding-right:3px;"></teams-score>
+	<teams-score number="2" id="team2" class="flex" style="padding-left:3px;"></teams-score>
 </div>
 <hr class="teams" style="display:none">
 <div class="layout horizontal" id="p1p2">
-	<player-info player="1" id="player1"></player-info>
-	<player-info player="2" id="player2"></player-info>
+	<player-info player="1" id="player1" style="padding-right:3px;"></player-info>
+	<player-info player="2" id="player2" style="padding-left:3px;"></player-info>
 </div>
 <div class="layout horizontal" id="p3p4" style="display:none">
-	<player-info player="3" id="player3"></player-info>
-	<player-info player="4" id="player4"></player-info>
+	<player-info player="3" id="player3" style="padding-right:3px;"></player-info>
+	<player-info player="4" id="player4" style="padding-left:3px;"></player-info>
 </div>
 <hr>
 <div class="layout horizontal">
-	<paper-button raised class="indigo flex" id="ssbm-fields-update" style="width: 100%">Complete Fields</paper-button>
-	<paper-button raised class="indigo flex" id="ssbm-players-update" style="width: 100%">Update</paper-button>
+	<div class="flex" style="padding-left:2px;padding-right:2px">
+		<paper-button raised class="flex red" id="ssbm-clear-fields" style="width: 100%">Clear All</paper-button>
+	</div>
+	<div class="flex-4" style="padding-left:2px;padding-right:2px">
+		<paper-button raised class="indigo flex" id="ssbm-players-update" style="width: 100%">Update</paper-button>
+	</div>
 </div>
-<div class="layout horizontal" id="swap-dropdowns">
-	<swap-dropdown number="1" id="swap1"></swap-dropdown>
-	<swap-dropdown number="2" id="swap2"></swap-dropdown>
-</div>
+</br>
 <div class="layout horizontal">
-	<paper-button raised class="flex" id="ssbm-players-swap">Swap players</paper-button>
+	<paper-button raised class="grey flex" id="ssbm-players-swap">Swap players</paper-button>
 </div>
 
 <script src="js/players.js"></script>

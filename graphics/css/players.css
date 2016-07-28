@@ -1,187 +1,167 @@
-/*@font-face {
-	font-family: 'OswaldRegular';
-    src: url('img/Oswald-Regular.eot');
-    src: url('img/Oswald-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
-    font-family: 'OswaldBold';
-    src: url('img/Oswald-Bold.eot');
-    src: url('img/Oswald-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}*/
+	font-family: FranklinMedium;
+	src: url('../img/fonts/FRAMDCN.TTF');
+	font-weight: normal;
+	font-style: normal;
+}
 
-/*body {
+@font-face {
+	font-family: FranklinDemi;
+	src: url('../img/fonts/FRADMCN.TTF');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
 	overflow: hidden;
-}*/
+}
 
 #container {
-	width: 1295px;
-	height: 1060px;
-	color: #fff;
-}
-
-#teams {
+	width: 900px;
+	height: 56px;
 	position: absolute;
-	top: -50px;
-	margin: 5px 10px 0 10px;
-	display: flex;
-	justify-content: space-between;
-	width: 1275px;
-
-	font-family: 'Oxygen', helvetica, arial;
-	font-size: 20px;
-	/*color: white;*/
+	top: 0;
+	left: 0;
 }
 
-.team {
-	width: 100px;
-	height: 45px;
-	/*background: -moz-linear-gradient(top, #e8e7e9 0%, #a4a5a6 100%); /* FF3.6+ */
-	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e7e9), color-stop(100%,#a4a5a6)); /* Chrome,Safari4+ */
-	background-image: url('../img/backgrounds/none team.png');
-	display: flex;
-	align-items: center;
-	position: relative;
-}
-
-.teamname {
-	margin-left: 5px;
-	margin-right: 5px;
-	flex-basis: 65px;
-}
-
-.teamscore {
-	margin: 5px;
-	margin-left: 10px;
-}
-
-#team2name {
-	text-align: right;
-}
-
-#space {
-	width: 1px;
-	height: 960px;
-}
-
-.players-container {
-	/*position: absolute;
-	bottom: 0;*/
-	margin: 0 5px 5px 5px;
-	position: relative;
-}
-
-.twoplayer {
+.player {
 	/*background: #11a105;*/
 	/*background: -moz-linear-gradient(top, #e8e7e9 0%, #a4a5a6 100%); /* FF3.6+ */
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e7e9), color-stop(100%,#a4a5a6)); /* Chrome,Safari4+ */
-	background-image: url('../img/backgrounds/players.png');
-	width: 550px;
-	height: 45px;
-	float: left;
-	display: flex;
-	align-items: center;
-	position: relative;
-	overflow: hidden;
-
-	font-family: 'Oxygen', helvetica, arial;
-	font-size: 20px;
-	color: white;
-}
-
-#twoplayers {
+	width: 328px;
+	height: 32px;
+	top: 8px;
+	background-color: white;
+	border-radius: 4px;
+	/*display: flex;
+    align-items: center;*/
 	position: absolute;
-	top: 1010px;
-}
-
-#fourplayers {
-	position: absolute;
-	top: 1070px;
-}
-
-.fourplayer {
-	width: 295px;
-	height: 45px;
-	/*background: #11a105;
-	border-radius: 5px;*/
-	/*background-image: -moz-linear-gradient(top, #e8e7e9 0%, #a4a5a6 100%); /* FF3.6+ */
-	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e7e9), color-stop(100%,#a4a5a6)); /* Chrome,Safari4+ */
-	background-image: url('../img/backgrounds/none tag.png');
-	margin-left: 6px;
-	margin-right: 6px;
-	float: left;
-	position: relative;
+	box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.19), 0px 8px 17px 0px rgba(0, 0, 0, 0.2);
+	font-family: FranklinMedium, helvetica, arial;
+	font-size: 22px;
+	color: black;
 	overflow: hidden;
-
-	display: flex;
-	align-items: center;
-
-	font-family: 'Oxygen', helvetica, arial;
-	font-size: 20px;
 }
 
-#player1-2 {
-	margin-left: 5px;
-	margin-right: 90px;
+#player1 {
+	left: 16px;
 }
 
-#player2-2 {
-	margin-left: 90px;
+#player2 {
+	left: 528px;
+}
+
+.scoreBox {
+	width: 28px;
+	height: 28px;
+	top: 2px;
+	background-color: #424242;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+	margin-left: 4px;
+	margin-right: 4px;
+	flex-shrink: 0;
+
+}
+
+.grands {
+	width: 28px;
+	height: 28px;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+	background-color: #000000;
+	margin-left: 4px;
+	margin-right: 4px;
+	flex-shrink: 0;
+	color: #FFFFFF;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 24px;
+	font-family: FranklinDemi, helvetica, arial;
+}
+
+#scoreP1 {
+	/*left: 296px;*/
+	float: left;
+}
+
+#scoreP2 {
+	/*left: 4px;*/
+	float: right;
 }
 
 .flag {
-	margin: 5px;
+	margin: 4px;
+	flex-shrink: 0;
+	z-index: 2;
 }
 
-.flag-2player {
-	padding-right: 5px;
-	flex: 0 0 27px;
+#p1flag {
+	float: left;
 }
 
-.flag-4player {
-	flex: 0 0 32px;
+#p2flag {
+	float: right;
 }
 
 .head {
-	padding-right: 4px;
-	margin: 5px;
-	flex: 0 0 20px;
+	margin: 4px;
+	flex-shrink: 0;
+	z-index: 2;
+	height: 32px;
+	width: auto;
+
 }
 
-.tag-2 {
-	margin-left: 5px;
-	margin-right: 5px;
-	flex-basis: 520px;
+#p1char {
+	float: right;
+}
+#p3char {
+	float: left;
+}
+#p2char {
+	float: right;
+}
+#p2char {
+	float: left;
+}
+
+.tag {
+	margin-left: 4px;
+	margin-right: 4px;
+	flex-basis: 288px;
+	white-space: nowrap;
+	overflow: hidden;
 	z-index: 2;
+}
+
+#p1tag {
+	text-align: left;
+	float: left;
+}
+
+#p2tag {
+	text-align: right;
+	float: right;
 }
 
 .score {
-	width: 20px;
-	margin: 5px;
+	color: white;
+	font-family: FranklinDemi, helvetica, arial;
+	width: 28px;
 	text-align: center;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 24px;
+	letter-spacing: -1px;
 }
 
-#p2tag-2 {
-	text-align: right;
-}
-
-.twoplayercontainer {
+.playercontainer {
 	display: flex;
 	align-items: center;
-	width: 520px;
-}
-
-#player1-4 {
-	margin-left: 35px;
-}
-
-.tag-4 {
-	margin-left: 5px;
-	margin-right: 5px;
-	z-index: 2;
+	width: 328px;
+	height: 32px;
 }
 
 .sponsor {
@@ -191,20 +171,24 @@
 	z-index: 1;
 }
 
-#p1sponsor-2 {
-	left: 85%;
-	top: -10px;
+#p1sponsor {
+	left: 20%;
+	top: -11px;
 	transform: translateX(-50%);
 }
 
-#p2sponsor-2 {
-	left: 15%;
-	top: -10px;
+#p2sponsor {
+	left: 45%;
+	top: -11px;
 	transform: translateX(-50%);
 }
-
-.sponsor4 {
-	left: 75%;
-	top: -10px;
+#p3sponsor {
+	left: 55%;
+	top: -11px;
+	transform: translateX(-50%);
+}
+#p4sponsor {
+	left: 80%;
+	top: -11px;
 	transform: translateX(-50%);
 }
