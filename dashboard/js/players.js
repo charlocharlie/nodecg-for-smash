@@ -204,8 +204,12 @@ window.addEventListener( "WebComponentsReady", function() {
 			playerList.value.push( val );
 			//Console.log(playerList.value);
 		} else if ( result.length >= 1 ) {
-			var index = playerList.value.indexOf( result[ 0 ] );
-			playerList.value[ index ] = val;
+			for ( var i = playerList.value.length - 1; i >= 0; i-- ) {
+				if ( playerList.value[ i ].tag == val.tag ) {
+					playerList.value.splice( i, 1 );
+				}
+			}
+			playerList.value.push( val );
 			//Console.log(playerList.value);
 		}
 	}
