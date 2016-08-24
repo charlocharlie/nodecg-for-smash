@@ -2,6 +2,11 @@
 <head>
 	<script src="components/webcomponentsjs/webcomponents-lite.min.js"></script>
 	<script src="components/jquery/dist/jquery.min.js"></script>
+	<script src="js/characters.js"></script>
+	<script src="components/mootools/dist/mootools-core.min.js"></script>
+	<script src="js/FancySelect.js"></script>
+
+	<link href="css/FancySelect.css" rel="stylesheet">
 
 	<link rel="import" href="components/polymer/polymer.html">
 	<link rel="import" href="components/paper-input/paper-input.html">
@@ -11,6 +16,162 @@
 	<link rel="import" href="components/iron-flex-layout/iron-flex-layout-classes.html">
 </head>
 <body>
+<datalist id="64-characters">
+	<option value="None">
+	<option value="Pikachu">
+	<option value="Kirby">
+	<option value="Captain Falcon">
+	<option value="Fox">
+	<option value="Yoshi">
+	<option value="Jigglypuff">
+	<option value="Mario">
+	<option value="Samus">
+	<option value="Donkey Kong">
+	<option value="Ness">
+	<option value="Link">
+	<option value="Luigi">
+</datalist>
+
+<datalist id="melee-characters">
+	<option value="None">
+	<option value="Fox">
+	<option value="Falco">
+	<option value="Marth">
+	<option value="Sheik">
+	<option value="Jigglypuff">
+	<option value="Peach">
+	<option value="Ice Climbers">
+	<option value="Captain Falcon">
+	<option value="Pikachu">
+	<option value="Samus">
+	<option value="Dr. Mario">
+	<option value="Yoshi">
+	<option value="Luigi">
+	<option value="Ganondorf">
+	<option value="Mario">
+	<option value="Young Link">
+	<option value="Donkey Kong">
+	<option value="Link">
+	<option value="Mr. Game &amp; Watch">
+	<option value="Roy">
+	<option value="Mewtwo">
+	<option value="Zelda">
+	<option value="Ness">
+	<option value="Pichu">
+	<option value="Bowser">
+	<option value="Kirby">
+</datalist>
+
+<!-- http://pmunderground.net/index.php/articles/9-articles/45-introducing-the-new-pmbr-and-pm-tier-list-2 -->
+<datalist id="pm-characters">
+	<option value="None">
+	<option value="Diddy Kong">
+	<option value="Meta Knight">
+	<option value="Fox">
+	<option value="Wolf">
+	<option value="Mr. Game &amp; Watch">
+	<option value="Sheik">
+	<option value="Captain Falcon">
+	<option value="Wario">
+	<option value="Zero Suit Samus">
+	<option value="Mewtwo">
+	<option value="Snake">
+	<option value="R.O.B.">
+	<option value="Marth">
+	<option value="Lucas">
+	<option value="Lucario">
+	<option value="Falco">
+	<option value="Peach">
+	<option value="Toon Link">
+	<option value="Ness">
+	<option value="Sonic">
+	<option value="Ike">
+	<option value="Roy">
+	<option value="Samus">
+	<option value="Mario">
+	<option value="Donkey Kong">
+	<option value="Luigi">
+	<option value="Pikachu">
+	<option value="Ice Climbers">
+	<option value="Ivysaur">
+	<option value="Squirtle">
+	<option value="Link">
+	<option value="Charizard">
+	<option value="Jigglypuff">
+	<option value="Zelda">
+	<option value="Ganondorf">
+	<option value="King Dedede">
+	<option value="Olimar">
+	<option value="Yoshi">
+	<option value="Pit">
+	<option value="Kirby">
+	<option value="Bowser">
+	<option value="Pokemon Trainer">
+</datalist>
+
+<!-- http://smashboards.com/threads/4br-smash-for-wii-u-tier-list-v2-0.440779/ -->
+<datalist id="wiiu-characters">
+	<option value="None">
+	<option value="Diddy Kong">
+	<option value="Cloud">
+	<option value="Sheik">
+	<option value="Rosalina &amp; Luma">
+	<option value="Mario">
+	<option value="Sonic">
+	<option value="Fox">
+	<option value="Zero Suit Samus">
+	<option value="Ryu">
+	<option value="Mewtwo">
+	<option value="Bayonetta">
+	<option value="Pikachu">
+	<option value="Meta Knight">
+	<option value="Villager">
+	<option value="Mega Man">
+	<option value="Ness">
+	<option value="Toon Link">
+	<option value="Corrin">
+	<option value="Marth">
+	<option value="Captain Falcon">
+	<option value="Greninja">
+	<option value="Lucario">
+	<option value="Yoshi">
+	<option value="Pit">
+	<option value="Donkey Kong">
+	<option value="Peach">
+	<option value="Dark Pit">
+	<option value="R.O.B.">
+	<option value="Luigi">
+	<option value="Olimar">
+	<option value="Robin">
+	<option value="Bowser">
+	<option value="Lucas">
+	<option value="Wario">
+	<option value="Ike">
+	<option value="Lucina">
+	<option value="Mr. Game &amp; Watch">
+	<option value="Pac-Man">
+	<option value="Little Mac">
+	<option value="Palutena">
+	<option value="Kirby">
+	<option value="Duck Hunt">
+	<option value="Link">
+	<option value="Shulk">
+	<option value="Samus">
+	<option value="Wii Fit Trainer">
+	<option value="Bowser Jr.">
+	<option value="Dr. Mario">
+	<option value="Falco">
+	<option value="Roy">
+	<option value="Charizard">
+	<option value="King Dedede">
+	<option value="Zelda">
+	<option value="Ganondorf">
+	<option value="Jigglypuff">
+	<option value="Mii Brawler">
+	<option value="Mii Gunner">
+	<option value="Mii Swordfighter">
+</datalist>
+
 <style is="custom-style" include="iron-flex iron-flex-factors">
 paper-button.indigo {
     background-color: #283593;
@@ -51,7 +212,8 @@ paper-button.indigo {
 	<template>
 		<div class="flex">
 			<div class="horizontal layout">
-				<paper-input class="flex-2" style="padding-right:2px" label="Player {{number}}" value="{{tag}}"></paper-input>
+				<paper-input class="flex-2 characters" style="padding-right:2px;" id="p{{number}}Char" label="Character" list="melee-characters" autocomplete="on" size="59" class="character-select" value="{{character}}"></paper-input>
+				<paper-input class="flex-3" style="padding-right:2px" label="Player {{number}}" value="{{tag}}"></paper-input>
 				<paper-checkbox checked="{{ko}}" style="transform: translateY(25%); margin-left:5px"></paper-checkbox>
 			</div>
 		</div>
@@ -68,6 +230,12 @@ paper-button.indigo {
 			},
 			getKO: function() {
 				return this.ko;
+			},
+			getCharacter: function() {
+				return this.character;
+			},
+			setCharacter: function(character) {
+				this.character = character;
 			}
 		});
 	});

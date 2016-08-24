@@ -1,27 +1,31 @@
 @font-face {
-	font-family: 'OswaldRegular';
-    src: url('img/fonts/Oswald-Regular.eot');
-    src: url('img/fonts/Oswald-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: FranklinMedium;
+	src: url('../img/fonts/FRAMDCN.TTF');
+	font-weight: normal;
+	font-style: normal;
 }
+
 @font-face {
-    font-family: 'OswaldBold';
-    src: url('img/fonts/Oswald-Bold.eot');
-    src: url('img/fonts/Oswald-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: FranklinDemi;
+	src: url('../img/fonts/FRADMCN.TTF');
+	font-weight: normal;
+	font-style: normal;
 }
 
 #rostercontainer {
-	width: 550px;
-	height: 330px;
-	font-family: 'Oxygen', helvetica, arial;
+	width: 1280px;
+	height: 400px;
+	left: 0px;
+	top: 0px;
+	font-family: FranklinDemi, helvetica, arial;
+	overflow: hidden;
 }
 
 #rosterheadercontainer {
 	width: 550px;
 	height: 30px;
+	left: 161px;
+	position: relative;
 }
 
 .rosterheader {
@@ -29,32 +33,30 @@
 	width: 275px;
 	height: 30px;
 	float: left;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+	will-change: left;
 }
 
 #rosterheaderleft {
-	/*background-color: #4D4DE3;*/
-	background: -moz-linear-gradient(top, rgba(0,94,163,1) 0%, rgba(0,127,220,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,94,163,1)), color-stop(100%,rgba(0,127,220,1))); /* Chrome,Safari4+ */
-
+	background-color: rgb(61, 61, 61);
 	position: relative;
-	left: -275px;
+	left: -436px;
 }
 
 #rosterheaderright {
-	/*background-color: #E44C4B;*/
-	background: -moz-linear-gradient(top, rgba(164,27,0,1) 0%, rgba(220,37,0,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(164,27,0,1)), color-stop(100%,rgba(220,37,0,1))); /* Chrome,Safari4+ */
-
+	background-color: rgb(255, 109, 0);
 	position: relative;
-	left: 275px;
+	left: 456px;
 }
 
 .crewname {
-	width: 235px;
+	width: 219px;
 	height: 30px;
 	float: left;
 	overflow: hidden;
 	line-height: 30px;
+	font-weight: bold;
+	font-size: 26px;
 }
 
 .crewstock {
@@ -63,25 +65,32 @@
 	float: left;
 	overflow: hidden;
 	line-height: 30px;
-	font-size: 0.9em;
+	font-size: 26px;
+	font-weight: bold;
 }
 
 #crewnameleft {
-	text-align: right;
+	text-align: left;
+	color: white;
+	margin-left: 8px;
 }
 
 #crewnameright {
-	text-align: left;
+	text-align: right;
+	margin-right: 8px;
 }
 
 #crewstockleft {
 	text-align: right;
-	padding-right: 10px;
+	margin-right: 10px;
+	margin-left: 8px;
+	color: white;
 }
 
 #crewstockright {
 	text-align: left;
-	padding-left: 10px;
+	margin-left: 10px;
+	margin-right: 8px;
 }
 
 #rosterbodycontainer {
@@ -93,15 +102,20 @@
 	width: 275px;
 	height: 300px;
 	float: left;
-	font-size: 1.05em;
+	font-size: 24px;
+	line-height: 26px;
+	font-family: FranklinMedium, helvetica, arial;
+	position: relative;
 }
 
 #rosterleft {
 	text-align: right;
+	left: 161px;
 }
 
 #rosterright {
 	text-align: left;
+	left: 161px;
 }
 
 .rosterentry {
@@ -112,16 +126,49 @@
 	border-style: solid;
 	border-width: 1px;
 	border-color: #ddd;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+	will-change: left;
+}
+
+.rostername {
+	width: 230px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#rosternameleft {
+	float: right;
+}
+
+#rosternameright {
+	float: left;
 }
 
 #rosterleft .rosterentry {
 	padding-right: 10px;
 	position: relative;
-	left: -275px;
+	left: -436px;
 }
 
 #rosterright .rosterentry {
 	padding-left: 10px;
 	position: relative;
-	left: 275px;
+	left: 456px;
+}
+
+#leftchar {
+	float: left;
+}
+
+#rightchar {
+	float: right;
+}
+
+.head {
+	margin: 2px 4px 2px 4px;
+	flex-shrink: 0;
+	z-index: 2;
+	height: 24px;
+	width: auto;
+	vertical-align: middle;
 }
