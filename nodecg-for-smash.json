@@ -52,7 +52,7 @@
     "players-score-font-size-wiiu": "16px",
     "players-character-height-wiiu": "22px",
     "players-flag-zoom-wiiu": 0.81,
-    "players-sponsor-zoom-wiiu": 0.60,
+    "players-sponsor-zoom-wiiu": 0.6,
 
 
     "top-info-topvar-64": 16,
@@ -65,7 +65,7 @@
     "top-info-leftInfo-melee": 104,
     "top-info-infoSpacing-melee": 184,
 
-    "top-info-topvar-pm": 16,
+    "top-info-topvar-pm": 8,
     "top-info-leftMessage-pm": 0,
     "top-info-leftInfo-pm": 104,
     "top-info-infoSpacing-pm": 224,

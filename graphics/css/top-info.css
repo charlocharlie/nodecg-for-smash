@@ -34,7 +34,7 @@ body {
 	/*background: -moz-linear-gradient(top, #e8e7e9 0%, #a4a5a6 100%); /* FF3.6+ */
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e7e9), color-stop(100%,#a4a5a6)); /* Chrome,Safari4+ */
 	width: 240px;
-	height: 40px;
+	height: 32px;
 	top: 16px;
 	border-radius: 4px;
 	background-color: #ffffff;
@@ -44,7 +44,7 @@ body {
 	text-align: center;
 	font-family: FranklinDemi, helvetica, arial;
 	font-size: 26px;
-	line-height: 40px;
+	line-height: 32px;
 	white-space: nowrap;
 	overflow: hidden;
 }
@@ -61,7 +61,7 @@ body {
 
 #message {
 	width: 0;
-	height: 40px;
+	height: 32px;
 	top: 16px;
 	background: #424242;
 	color: #FFF;
@@ -73,7 +73,7 @@ body {
 	text-align: center;
 	font-family: FranklinMedium, helvetica, arial;
 	font-size: 22px;
-	line-height: 40px;
+	line-height: 32px;
 	white-space: nowrap;
 	overflow: hidden;
 }
