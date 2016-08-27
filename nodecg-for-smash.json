@@ -11,6 +11,9 @@
     "players-tag-width-64": "288px",
     "players-scoreBox-size-64": "28px",
     "players-score-font-size-64": "24px",
+    "players-character-height-64": "28px",
+    "players-flag-zoom-64": 1.0,
+    "players-sponsor-zoom-64": 0.75,
 
     "players-player-width-melee": "328px",
     "players-player-height-melee": "32px",
@@ -21,16 +24,22 @@
     "players-tag-width-melee": "288px",
     "players-scoreBox-size-melee": "28px",
     "players-score-font-size-melee": "24px",
+    "players-character-height-melee": "28px",
+    "players-flag-zoom-melee": 1.0,
+    "players-sponsor-zoom-melee": 0.75,
 
     "players-player-width-pm": "328px",
     "players-player-height-pm": "32px",
     "players-player-font-size-pm": "20px",
     "players-topvar-pm": 16,
     "players-player1-left-pm": "16px",
-    "players-player2-left-pm": "528px",
+    "players-player2-left-pm": "568px",
     "players-tag-width-pm": "288px",
     "players-scoreBox-size-pm": "28px",
     "players-score-font-size-pm": "24px",
+    "players-character-height-pm": "28px",
+    "players-flag-zoom-pm": 1.0,
+    "players-sponsor-zoom-pm": 0.75,
 
     "players-player-width-wiiu": "232px",
     "players-player-height-wiiu": "24px",
@@ -41,6 +50,9 @@
     "players-tag-width-wiiu": "232px",
     "players-scoreBox-size-wiiu": "20px",
     "players-score-font-size-wiiu": "16px",
+    "players-character-height-wiiu": "22px",
+    "players-flag-zoom-wiiu": 0.81,
+    "players-sponsor-zoom-wiiu": 0.60,
 
 
     "top-info-topvar-64": 16,

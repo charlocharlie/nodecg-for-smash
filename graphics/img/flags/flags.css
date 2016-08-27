@@ -3,6 +3,12 @@
 	height: 32px;
 	background:url(flags.png) no-repeat
 }
+.state {
+	width: 32px;
+	height: 32px;
+	background:url(states.png) no-repeat
+}
+
 
 .flag.flag-ad {background-position: -32px 0}
 .flag.flag-ae {background-position: -64px 0}
@@ -232,3 +238,56 @@
 	margin: 0px;
 	background-position: 0 0;
 }
+
+.state.state-ak { background-position: -64px 0}
+.state.state-al { background-position: -96px 0}
+.state.state-ar { background-position: -128px 0}
+.state.state-az { background-position: -160px 0}
+.state.state-ca { background-position: -192px 0}
+.state.state-co { background-position: -224px 0}
+.state.state-ct { background-position: -256px 0}
+.state.state-dc { background-position: 0 -32px}
+.state.state-de { background-position: -32px -32px}
+.state.state-fl { background-position: -64px -32px}
+.state.state-ga { background-position: -96px -32px}
+.state.state-hi { background-position: -128px -32px}
+.state.state-ia { background-position: -160px -32px}
+.state.state-id { background-position: -192px -32px}
+.state.state-il { background-position: -224px -32px}
+.state.state-in { background-position: -256px -32px}
+.state.state-ks { background-position: 0 -64px}
+.state.state-ky { background-position: -32px -64px}
+.state.state-la { background-position: -64px -6464px}
+.state.state-ma { background-position: -96px -64px}
+.state.state-md { background-position: -128px -64px}
+.state.state-me { background-position: -160px -64px}
+.state.state-mi { background-position: -192px -64px}
+.state.state-mn { background-position: -224px -64px}
+.state.state-mo { background-position: -256px -64px}
+.state.state-ms { background-position: 0 -96px}
+.state.state-mt { background-position: -32px -96px}
+.state.state-nc { background-position: -64px -96px}
+.state.state-nd { background-position: -96px -96px}
+.state.state-ne { background-position: -128px -96px}
+.state.state-nh { background-position: -160px -96px}
+.state.state-nj { background-position: -192px -96px}
+.state.state-nm { background-position: -224px -96px}
+.state.state-nv { background-position: -256px -96px}
+.state.state-ny { background-position: 0 -128px}
+.state.state-oh { background-position: -32px -128128px}
+.state.state-ok { background-position: -64px -128px}
+.state.state-or { background-position: -96px -128px}
+.state.state-pa { background-position: -128px -128px}
+.state.state-pr { background-position: -160px -128px}
+.state.state-ri { background-position: -192px -128px}
+.state.state-sc { background-position: -224px -128px}
+.state.state-sd { background-position: -256px -128px}
+.state.state-tn { background-position: 0 -160px}
+.state.state-tx { background-position: -32px -160px}
+.state.state-ut { background-position: -64px -160px}
+.state.state-va { background-position: -96px -160px}
+.state.state-vt { background-position: -128px -160px}
+.state.state-wa { background-position: -160px -160px}
+.state.state-wi { background-position: -192px -160px}
+.state.state-wv { background-position: -224px -160px}
+.state.state-wy { background-position: -256px -160px}

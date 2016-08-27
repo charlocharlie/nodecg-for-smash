@@ -59,10 +59,10 @@ $( function() {
 			$( "#p4char" ).hide();
 
 			if ( data.p1Flag ) {
-				$( "#p1flag" ).attr( "class", "flag flag-" + data.p1Flag.toLowerCase() ).show();
+				$( "#p1flag" ).attr( "class", data.p1Flag.toLowerCase() ).show();
 			}
 			if ( data.p2Flag ) {
-				$( "#p2flag" ).attr( "class", "flag flag-" + data.p2Flag.toLowerCase() ).show();
+				$( "#p2flag" ).attr( "class", data.p2Flag.toLowerCase() ).show();
 			}
 			handleGrands( data.p1Grands, 1 );
 			handleGrands( data.p2Grands, 2 );
@@ -170,7 +170,9 @@ $( function() {
 				"height":  nodecg.bundleConfig[ "players-character-height-64" ],
 				"image-rendering": "pixelated"
 			} );
-			$( ".flag" ).css( { "zoom": 1.0 } );
+			$( ".flag" ).css( { "zoom": nodecg.bundleConfig[ "players-flag-zoom-64" ] } );
+			$( ".state" ).css( { "zoom": nodecg.bundleConfig[ "players-flag-zoom-64" ] } );
+			$( ".sponsor" ).css( { "zoom": nodecg.bundleConfig[ "players-sponsor-zoom-64" ] } );
 		}
 		if ( game == "melee" ) { //MELEE
 			$( ".player" ).css( {
@@ -200,7 +202,9 @@ $( function() {
 				"height":  nodecg.bundleConfig[ "players-character-height-melee" ],
 				"image-rendering": "auto"
 			} );
-			$( ".flag" ).css( { "zoom": 1.0 } );
+			$( ".flag" ).css( { "zoom": nodecg.bundleConfig[ "players-flag-zoom-melee" ] } );
+			$( ".state" ).css( { "zoom": nodecg.bundleConfig[ "players-flag-zoom-melee" ] } );
+			$( ".sponsor" ).css( { "zoom": nodecg.bundleConfig[ "players-sponsor-zoom-melee" ] } );
 		}
 		if ( game == "pm" ) { //PROJECT M/BRAWL
 			$( ".player" ).css( {
@@ -230,7 +234,9 @@ $( function() {
 				"height":  nodecg.bundleConfig[ "players-character-height-pm" ],
 				"image-rendering": "auto"
 			} );
-			$( ".flag" ).css( { "zoom": 1.0 } );
+			$( ".flag" ).css( { "zoom": nodecg.bundleConfig[ "players-flag-zoom-pm" ] } );
+			$( ".state" ).css( { "zoom": nodecg.bundleConfig[ "players-flag-zoom-pm" ] } );
+			$( ".sponsor" ).css( { "zoom": nodecg.bundleConfig[ "players-sponsor-zoom-pm" ] } );
 		}
 		if ( game == "wiiu" ) { //SMASH FOR WII U
 			$( ".player" ).css( {
@@ -260,7 +266,9 @@ $( function() {
 				"height":  nodecg.bundleConfig[ "players-character-height-wiiu" ],
 				"image-rendering": "auto"
 			} );
-			$( ".flag" ).css( { "zoom": 18 / 22 } );
+			$( ".flag" ).css( { "zoom": nodecg.bundleConfig[ "players-flag-zoom-wiiu" ] } );
+			$( ".state" ).css( { "zoom": nodecg.bundleConfig[ "players-flag-zoom-wiiu" ] } );
+			$( ".sponsor" ).css( { "zoom": nodecg.bundleConfig[ "players-sponsor-zoom-wiiu" ] } );
 		}
 
 	}

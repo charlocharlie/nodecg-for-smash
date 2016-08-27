@@ -92,7 +92,13 @@ body {
 }
 
 .flag {
-	margin: 4px;
+	margin: 2px;
+	flex-shrink: 0;
+	z-index: 2;
+}
+
+.state {
+	margin: 2px;
 	flex-shrink: 0;
 	z-index: 2;
 }
@@ -106,7 +112,7 @@ body {
 }
 
 .head {
-	margin: 4px;
+	margin: 2px;
 	flex-shrink: 0;
 	z-index: 2;
 	height: 32px;
@@ -169,26 +175,25 @@ body {
 	flex-grow: 0;
 	opacity: 0.5;
 	z-index: 1;
+	height: 64px;
+	zoom: 0.75;
+	filter: grayscale(60%);
 }
 
 #p1sponsor {
 	left: 20%;
-	top: -11px;
 	transform: translateX(-50%);
 }
 
 #p2sponsor {
 	left: 45%;
-	top: -11px;
 	transform: translateX(-50%);
 }
 #p3sponsor {
 	left: 55%;
-	top: -11px;
 	transform: translateX(-50%);
 }
 #p4sponsor {
 	left: 80%;
-	top: -11px;
 	transform: translateX(-50%);
 }
