@@ -178,6 +178,7 @@ body {
 	height: 64px;
 	zoom: 0.75;
 	filter: grayscale(60%);
+	top: -9px;
 }
 
 #p1sponsor {
