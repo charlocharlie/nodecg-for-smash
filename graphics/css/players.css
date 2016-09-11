@@ -176,8 +176,8 @@ body {
 	opacity: 0.5;
 	z-index: 1;
 	height: 64px;
-	zoom: 0.75;
-	filter: grayscale(60%);
+	/*zoom: 0.75;*/
+	-webkit-filter: grayscale(60%);
 	top: -9px;
 }
 

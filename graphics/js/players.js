@@ -69,8 +69,8 @@ $( function() {
 			handleSponsor( data.p1Sponsor, 3 );
 			handleSponsor( data.p2Sponsor, 2 );
 			$( "#p1sponsor" ).hide();
-			$( "#p2sponsor" ).css('left', '');
-			$( "#p3sponsor" ).css('left', '');
+			$( "#p2sponsor" ).css( "left", "" );
+			$( "#p3sponsor" ).css( "left", "" );
 			$( "#p4sponsor" ).hide();
 		} else {
 			$( "#p1tag" ).text( data.p1Tag ).css( "text-align", "center" );
@@ -92,8 +92,8 @@ $( function() {
 			handleSponsor( data.p2Sponsor, 2 );
 			handleSponsor( data.p3Sponsor, 3 );
 			handleSponsor( data.p4Sponsor, 4 );
-			$( "#p2sponsor" ).css('left', '30%');
-			$( "#p3sponsor" ).css('left', '70%');
+			$( "#p2sponsor" ).css( "left", "30%" );
+			$( "#p3sponsor" ).css( "left", "70%" );
 		}
 
 	}
