@@ -33,7 +33,7 @@ $( function() {
 					"color": "#888",
 					"text-decoration": "line-through"
 				} ).siblings( "#leftchar" ).css( {
-					"filter": "grayscale(75%)",
+					"-webkit-filter": "grayscale(75%)",
 					"opacity": "0.6"
 				} );
 			} else {
@@ -43,7 +43,7 @@ $( function() {
 					"color": "#000",
 					"text-decoration": "none"
 				} ).siblings( "#leftchar" ).css( {
-					"filter": "grayscale(0%)",
+					"-webkit-filter": "grayscale(0%)",
 					"opacity": "1"
 				} );;
 			}
@@ -54,7 +54,7 @@ $( function() {
 					"color": "#888",
 					"text-decoration": "line-through"
 				} ).siblings( "#rightchar" ).css( {
-					"filter": "grayscale(75%)",
+					"-webkit-filter": "grayscale(75%)",
 					"opacity": "0.6"
 				} );;
 			} else {
@@ -64,7 +64,7 @@ $( function() {
 					"color": "#000",
 					"text-decoration": "none"
 				} ).siblings( "#rightchar" ).css( {
-					"filter": "grayscale(0%)",
+					"-webkit-filter": "grayscale(0%)",
 					"opacity": "1"
 				} );;
 			}
