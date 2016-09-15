@@ -23,6 +23,8 @@
     Each player can have a stock icon with costume and sponsor icon displayed on the overlay now.
     The team colors feature is completely removed. 
 * **New default font.** The stream-side font I chose was Franklin Gothic Cond Demi and Franklin Gothic Cond Medium. These are included in the repository.
+* **State outlines.** Added US state outlines to country flag icon list. Easier to identify than state flags.
+* **Crew roster update.** Added multi-game support, character icons for each player, and new styling changes. Roster graphic now only displays populated player fields. Empty fields will be hidden.
     
 ###Development changes
     
