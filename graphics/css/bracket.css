@@ -21,7 +21,7 @@
 	width: 1600px;
 	height: 900px;
 	position: absolute;
-	background-color: rgba( 0, 0, 0, .80);
+	background-color: rgba( 39, 42, 51, 0.80);
 }
 #info {
 	width: 1600px;
@@ -62,7 +62,7 @@
 	width: 183px;
 	height: 25px;
 	color: #FFF;
-	background-color: #626262;
+	background-color: #58595E;
 	/*border: 1px solid #444444;*/
 	box-sizing: border-box;
 	text-align: left;
@@ -97,10 +97,10 @@
 	float: left;
 	width: 25px;
 	height: 25px;
-	color: #111;
+	color: #23252D;
 	text-shadow: none;
 	/*border: 1px solid #626262;*/
-	background-color: #808080;
+	background-color: #787A80;
 	box-sizing: border-box;
 	text-align: center;
 	font-size: 22px;
@@ -115,7 +115,7 @@
 }
 
 .bracket-location {
-	background-color: #3e3e3e;
+	background-color: rgba(54,59,71,0.8);
 	color: #FFF;
 	width: 183px;
 	text-align: center;
